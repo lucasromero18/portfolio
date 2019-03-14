@@ -4,56 +4,84 @@ import Skills from './Skills.js'
 import Projects from './Projects.js'
 import Education from './Education.js'
 import Work from './Work.js'
-import Navbar from './Navbar.js'
+import Header from './Header.js'
 import Particles from 'react-particles-js'
 import { Button } from 'reactstrap';
+
 
 const jumbo = {
   styles: {
     position: 'absolute', 
     color: 'white',
     fontFamily: 'Montserrat, sans-serif',
-    marginTop: "20%",
+    marginTop: "17%",
     marginLeft: "27%",
     fontSize: "3em"
   }
 }
 
-const linkButtons = {
+const fullStack = {
   styles: {
-    position: 'absolute'
+    position: 'absolute', 
+    color: 'white',
+    fontFamily: 'Montserrat, sans-serif',
+    marginTop: "22%",
+    marginLeft: "20%",
+    fontSize: "3em"
   }
 }
+
+const viewButton = {
+  styles: {
+    position: 'absolute',
+    color: "white",
+    marginTop: "28%",
+    marginLeft: "40%",
+    fontFamily: 'Montserrat, sans-serif',
+    height: "10%",
+    width: "20%"
+  }
+}
+
+const viewWorkArrow = {
+  styles: {
+    marginLeft: "5%",
+    marginTop: "3%"
+  }
+}
+
+
 
 
 class Home extends Component {
     render() {
       return (
         <div>
-          <h1 style={jumbo.styles}>Hello, I'm Lucas Romero</h1>
-          <Button style={linkButtons.styles} outline color="primary">primary</Button>
+          <h1 style={jumbo.styles}>Hello, I'm Lucas Romero.</h1>
+          <h1 style={fullStack.styles}>I'm a Full Stack Web Developer.</h1>
+          <Button style={viewButton.styles} outline>View my work <i style={viewWorkArrow.styles} className="fas fa-arrow-circle-down"></i></Button>
             <Particles 
                 params={
                   {
                     "particles": {
                       "number": {
-                        "value": 147,
+                        "value": 231,
                         "density": {
                           "enable": true,
-                          "value_area": 800
+                          "value_area": 1441.5568814319463
                         }
                       },
                       "color": {
-                        "value": "#6ebaff"
+                        "value": "#add8e6"
                       },
                       "shape": {
-                        "type": "hexagon",
+                        "type": "circle",
                         "stroke": {
                           "width": 0,
-                          "color": "#000"
+                          "color": "#add8e6"
                         },
                         "polygon": {
-                          "nb_sides": 3
+                          "nb_sides": 9
                         },
                         "image": {
                           "src": "img/github.svg",
@@ -62,44 +90,44 @@ class Home extends Component {
                         }
                       },
                       "opacity": {
-                        "value": 1,
-                        "random": true,
+                        "value": 0.11212109077804028,
+                        "random": false,
                         "anim": {
                           "enable": false,
-                          "speed": 1,
+                          "speed": 0.5678085025267481,
                           "opacity_min": 0.1,
                           "sync": false
                         }
                       },
                       "size": {
-                        "value": 3,
-                        "random": false,
+                        "value": 4.004324670644295,
+                        "random": true,
                         "anim": {
                           "enable": false,
-                          "speed": 10,
-                          "size_min": 40,
+                          "speed": 12.167325054144603,
+                          "size_min": 59.21431526350373,
                           "sync": false
                         }
                       },
                       "line_linked": {
                         "enable": true,
-                        "distance": 150,
-                        "color": "#6ebaff",
-                        "opacity": 0.21306986324071361,
-                        "width": 2.1
+                        "distance": 256.2767789212349,
+                        "color": "#00ffff",
+                        "opacity": 0.32034597365154366,
+                        "width": 1.4415568814319464
                       },
                       "move": {
                         "enable": true,
-                        "speed": 2.3,
-                        "direction": "none",
+                        "speed": 1.6017298682577181,
+                        "direction": "bottom",
                         "random": false,
                         "straight": false,
                         "out_mode": "out",
                         "bounce": false,
                         "attract": {
                           "enable": false,
-                          "rotateX": 600,
-                          "rotateY": 1200
+                          "rotateX": 1441.5568814319463,
+                          "rotateY": 1441.5568814319463
                         }
                       }
                     },
@@ -107,18 +135,18 @@ class Home extends Component {
                       "detect_on": "canvas",
                       "events": {
                         "onhover": {
-                          "enable": false,
-                          "mode": "repulse"
+                          "enable": true,
+                          "mode": "grab"
                         },
                         "onclick": {
-                          "enable": false,
+                          "enable": true,
                           "mode": "push"
                         },
                         "resize": true
                       },
                       "modes": {
                         "grab": {
-                          "distance": 400,
+                          "distance": 340.68510151604886,
                           "line_linked": {
                             "opacity": 1
                           }
@@ -150,7 +178,7 @@ class Home extends Component {
                   height: '100vh',
                   backgroundColor: '#2a2a2a'
                 }} />
-          <Navbar />
+          <Header />
           <AboutMe />
           <Skills />
           <Projects />
@@ -162,3 +190,5 @@ class Home extends Component {
   }
   
   export default Home;
+
+
