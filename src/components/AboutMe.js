@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import myImmy from '../lucas_port_immy.jpg';
+import { IncomingMessage } from 'http';
 
 let test = require('progressbar.js');
 
@@ -12,7 +13,7 @@ const aboutMeHeader = {
     borderBottom: "5px double #2a2a2a",
     fontSize: "40px",
     fontWeight: "bold",
-    marginLeft: "42%",
+    marginLeft: "44%",
     marginTop: "5%",
     width: "10%"
   }
@@ -49,6 +50,28 @@ const myImage = {
   }
 }
 
+const ihdContainer = {
+  styles: {
+    display: "flex",
+    marginLeft: "6%",
+  }
+}
+
+const icon = {
+  styles: {
+    fontSize: "2em",
+    color: "#add8e6"
+    }
+}
+
+const skillLabel = {
+  styles: {
+    fontFamily: 'Montserrat, sans-serif',
+    marginLeft: "2%",
+    color: "#2a2a2a"
+  }
+}
+
 
 
 
@@ -69,6 +92,20 @@ class AboutMe extends Component {
               im some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some 
               advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, 
               or one who avoids a pain that produces no resultant pleasure?</p>
+          </div>
+          <div style={ihdContainer.styles}>
+          <div>
+            <h1><i style={icon.styles} class="fas fa-globe-americas"></i></h1>
+            <h2 style={skillLabel.styles}>Communication</h2>
+          </div>
+          <div>
+            <h1><i style={icon.styles} class="fas fa-eye"></i></h1>
+            <h2 style={skillLabel.styles}>Detail</h2>
+          </div>
+          <div>
+            <h1><i style={icon.styles} class="fas fa-clock"></i></h1>
+            <h2 style={skillLabel.styles}>Efficiency</h2>
+          </div>
           </div>
         </div>
       );
