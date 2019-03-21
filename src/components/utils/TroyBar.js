@@ -6,7 +6,7 @@ class TroyBar extends Component {
         let idName = this.props.skill.replace(' ', '');
         return (
             <div style={{width:this.props.widthHeight + 'px', height:this.props.widthHeight + 'px', display: 'inline-block'}}>
-                <h3 style={{textAlign: 'center', height: '20%', color: '#2a2a2a', fontFamily: 'Montserrat, sans-serif'}}>{this.props.skill}</h3>
+                <h3 style={{textAlign: 'center', height: '20%', color: this.props.percentageColor, fontFamily: 'Montserrat, sans-serif'}}>{this.props.skill}</h3>
                 <div id={idName}>
                 </div>
             </div>
@@ -49,7 +49,7 @@ class TroyBar extends Component {
           
           bar.text.style.fontFamily = 'Montserrat, sans-serif'
           bar.text.style.fontSize = '2rem';
-          bar.text.style.color = '#2a2a2a';
+          bar.text.style.color = '#D3D3D3';
           bar.animate(this.props.val);
     }
   }

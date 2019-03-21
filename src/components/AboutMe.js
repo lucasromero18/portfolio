@@ -53,13 +53,13 @@ const myImage = {
 const ihdContainer = {
   styles: {
     display: "flex",
-    marginLeft: "6%",
+    marginTop: "5%"
   }
 }
 
 const icon = {
   styles: {
-    fontSize: "2em",
+    fontSize: "2.4em",
     color: "#add8e6"
     }
 }
@@ -68,9 +68,18 @@ const skillLabel = {
   styles: {
     fontFamily: 'Montserrat, sans-serif',
     marginLeft: "2%",
-    color: "#2a2a2a"
+    color: "#2a2a2a",
+    fontSize: "2.4em"
   }
 }
+
+const itemContainer = {
+  styles: {
+    flex: '1',
+    textAlign: 'center'
+  }
+}
+
 
 
 
@@ -94,17 +103,29 @@ class AboutMe extends Component {
               or one who avoids a pain that produces no resultant pleasure?</p>
           </div>
           <div style={ihdContainer.styles}>
-          <div>
+          <div style={itemContainer.styles}>
             <h1><i style={icon.styles} class="fas fa-globe-americas"></i></h1>
             <h2 style={skillLabel.styles}>Communication</h2>
+            <p>complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human 
+              happiness.</p>
           </div>
-          <div>
+          <div style={itemContainer.styles}>
             <h1><i style={icon.styles} class="fas fa-eye"></i></h1>
             <h2 style={skillLabel.styles}>Detail</h2>
+            <p>complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human 
+              happiness.</p>
           </div>
-          <div>
+          <div style={itemContainer.styles}>
             <h1><i style={icon.styles} class="fas fa-clock"></i></h1>
             <h2 style={skillLabel.styles}>Efficiency</h2>
+            <p>complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human 
+              happiness.</p>
+          </div>
+          <div style={itemContainer.styles}>
+            <h1><i style={icon.styles} class="fas fa-brain"></i></h1>
+            <h2 style={skillLabel.styles}>Determined</h2>
+            <p>complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human 
+              happiness.</p>
           </div>
           </div>
         </div>
