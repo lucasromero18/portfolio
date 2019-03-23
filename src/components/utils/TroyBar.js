@@ -6,7 +6,7 @@ class TroyBar extends Component {
         let idName = this.props.skill.replace(' ', '');
         return (
             <div style={{width:this.props.widthHeight + 'px', height:this.props.widthHeight + 'px', display: 'inline-block'}}>
-                <h3 style={{textAlign: 'center', height: '20%', color: this.props.percentageColor, fontFamily: 'Montserrat, sans-serif'}}>{this.props.skill}</h3>
+                <h3 style={{textAlign: 'center', height: '20%', color: this.props.percentageColor, fontFamily: 'Montserrat, sans-serif', fontSize: this.props.size + 'em'}}>{this.props.skill}</h3>
                 <div id={idName}>
                 </div>
             </div>

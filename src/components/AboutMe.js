@@ -10,12 +10,10 @@ const aboutMeHeader = {
   styles: {
     fontFamily: 'Montserrat, sans-serif',
     color: '#2a2a2a',
-    borderBottom: "5px double #2a2a2a",
     fontSize: "40px",
     fontWeight: "bold",
-    marginLeft: "44%",
-    marginTop: "5%",
-    width: "10%"
+    textAlign: "center",
+    marginTop: "5%"
   }
 }
 
@@ -90,7 +88,7 @@ class AboutMe extends Component {
  
       return (
         <div>
-          <h1 style={aboutMeHeader.styles}>About</h1>
+          <h1 style={aboutMeHeader.styles}>Who's this guy?</h1>
             <div style={picImageContainer.styles}>
               <img style={myImage.styles} src={myImmy} />
               <p style={aboutMeText.styles}><h1 style={getToKnowMe.styles}>Get to know me</h1>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a 
