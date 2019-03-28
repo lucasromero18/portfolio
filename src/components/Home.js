@@ -5,6 +5,7 @@ import Projects from './Projects.js'
 import Education from './Education.js'
 import Work from './Work.js'
 import Header from './Header.js'
+import Contact from './Contact.js'
 import Particles from 'react-particles-js'
 import { Button } from 'reactstrap';
 
@@ -184,6 +185,7 @@ class Home extends Component {
           <Projects />
           <Education />
           <Work />
+          <Contact />
         </div>
       );
     }

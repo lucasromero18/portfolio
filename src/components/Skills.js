@@ -3,18 +3,17 @@ import TroyBar from './utils/TroyBar';
 
 const headerContainer = {
   styles: {
-    marginTop: "8%"
+    paddingTop: "7%"
   }
 }
 
 const header = {
   styles: {
     fontFamily: 'Montserrat, sans-serif',
-    color: '#2a2a2a',
+    color: '#808080',
     fontSize: "40px",
     fontWeight: "bold",
     marginLeft: "28%",
-    marginTop: "5%",
     display: "inline"
   }
 }
@@ -38,7 +37,8 @@ const soft = {
 
 const skillsContainer = {
   styles: {
-    marginTop: "5%"
+    marginTop: "5%",
+    paddingBottom: "4%"
   }
 }
 
@@ -46,9 +46,9 @@ const skillsContainer = {
 class Skills extends Component {
     render() {
       return (
-        <div>
+        <div style={{backgroundColor: "#F8F8FF"}}>
           <div style={headerContainer.styles}>
-            <h1 style={header.styles}>I utilize <h1 style={{color: "#add8e6", fontSize: "40px", fontWeight: "bold", display: "inline"}}>two</h1> types of skills..</h1>
+            <h1 style={header.styles}>I utilize <h1 style={{color: "#add8e6", fontSize: "40px", fontWeight: "bold", display: "inline", borderBottom: "2px solid #808080"}}>two</h1> types of skills..</h1>
               </div>
                 <div style={{marginTop: "5%"}}>
                 <div style={{display: "inline-block"}}>

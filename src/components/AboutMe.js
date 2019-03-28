@@ -9,11 +9,11 @@ console.log(test);
 const aboutMeHeader = {
   styles: {
     fontFamily: 'Montserrat, sans-serif',
-    color: '#2a2a2a',
+    color: '#808080',
     fontSize: "40px",
     fontWeight: "bold",
     textAlign: "center",
-    marginTop: "5%"
+    paddingTop: "7%"
   }
 }
 
@@ -87,8 +87,8 @@ class AboutMe extends Component {
     render() {
  
       return (
-        <div>
-          <h1 style={aboutMeHeader.styles}>Who's this guy?</h1>
+        <div style={{backgroundColor: "#F5F5F5"}}>
+          <h1 style={aboutMeHeader.styles}>Who's <h1 style={{color: "#add8e6", fontSize: "40px", fontWeight: "bold", display: "inline", borderBottom: "2px solid #808080"}}>this</h1> guy?</h1>
             <div style={picImageContainer.styles}>
               <img style={myImage.styles} src={myImmy} />
               <p style={aboutMeText.styles}><h1 style={getToKnowMe.styles}>Get to know me</h1>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a 
