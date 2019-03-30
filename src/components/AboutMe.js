@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import myImmy from '../lucas_port_immy.jpg';
 import { IncomingMessage } from 'http';
+import ReactCSSTransitionGroup from 'react-transition-group/CSSTransitionGroup'
 
 let test = require('progressbar.js');
 
@@ -85,10 +86,16 @@ const itemContainer = {
 
 class AboutMe extends Component {
     render() {
- 
       return (
         <div style={{backgroundColor: "#F5F5F5"}}>
+         <ReactCSSTransitionGroup
+          transitionName="example"
+          transitionAppear={true}
+          transitionAppearTimeout={500}
+          transitionEnter={false}
+          transitionLeave={false}>
           <h1 style={aboutMeHeader.styles}>Who's <h1 style={{color: "#add8e6", fontSize: "40px", fontWeight: "bold", display: "inline", borderBottom: "2px solid #808080"}}>this</h1> guy?</h1>
+        </ReactCSSTransitionGroup>
             <div style={picImageContainer.styles}>
               <img style={myImage.styles} src={myImmy} />
               <p style={aboutMeText.styles}><h1 style={getToKnowMe.styles}>Get to know me</h1>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a 
