@@ -27,15 +27,18 @@ class Projects extends Component {
           <Col sm="6">
             <Card body style={{marginTop: "8%", backgroundColor: "#808080"}}>
               <CardTitle style={{textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6", fontSize: "2em"}}>Romero Fitness</CardTitle>
-              <CardText style={{textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6"}}>A Fitness Application that contains direction with various 
-              training styles, accessibility to a body fat analyzer / chart to determine where the users health may lie.</CardText>
+              <CardText style={{textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6"}}>A Fitness Application (built with 
+              HTML, CSS, Bootstrap, and javascript) that contains direction with various training styles, accessibility to a body fat analyzer / 
+              chart to determine where the users health may lie. </CardText>
               <Button style={{color: "#add8e6"}}>Github</Button>
             </Card>
           </Col>
           <Col sm="6">
             <Card body style={{marginTop: "8%", backgroundColor: "#808080"}}>
               <CardTitle style={{textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6", fontSize: "2em"}}>techConnect</CardTitle>
-              <CardText style={{textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6"}}>With supporting text below as a natural lead-in to additional content.</CardText>
+              <CardText style={{textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6"}}>A tech-industry dating 
+              application (built with Node.js, Knex, Express, PostgreSQL, EJS, and Materialize) that brings users together based off of tech
+              related interests. Swipe away with techConnect! </CardText>
               <Button style={{color: "#add8e6"}}>Github</Button>
             </Card>
           </Col>
@@ -45,14 +48,18 @@ class Projects extends Component {
           <Col sm="6">
             <Card body style={{marginTop: "5%", backgroundColor: "#808080"}}>
               <CardTitle style={{textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6", fontSize: "2em"}}>F.I.T.</CardTitle>
-              <CardText style={{textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6"}}>With supporting text below as a natural lead-in to additional content.</CardText>
+              <CardText style={{textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6"}}>A Fitness Inventory Application
+              (built with React, Materialize, Node.js, Knex, Express, PostgreSQL) that allows users to construct their "dream" at home gym with
+              various items, and checkout items in their cart. </CardText>
               <Button style={{color: "#add8e6"}}>Github</Button>
             </Card>
           </Col>
           <Col sm="6">
             <Card body style={{marginTop: "5%", backgroundColor: "#808080"}}>
               <CardTitle style={{textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6", fontSize: "2em"}}>Real Gaming Reviews</CardTitle>
-              <CardText style={{textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6"}}>With supporting text below as a natural lead-in to additional content.</CardText>
+              <CardText style={{textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6"}}>A video game review application 
+              (built with React, MDBootstrap, Node.js, Knex, Express, PostgreSQL) that allows users to view the latest video games, and 
+              leave reviews to inform others about that game.</CardText>
               <Button style={{color: "#add8e6"}}>Github</Button>
             </Card>
           </Col>
@@ -61,7 +68,9 @@ class Projects extends Component {
           <Col sm="6">
             <Card body style={{marginTop: "5%", marginLeft: "46%", marginBottom: "5%", width: "55vw", backgroundColor: "#808080"}}>
               <CardTitle style={{textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6", fontSize: "2em"}}>Yikers!</CardTitle>
-              <CardText style={{textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6"}}>With supporting text below as a natural lead-in to additional content.</CardText>
+              <CardText style={{textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6"}}>A Social Media Application (built
+              with Vue.js, VueX, Vuetify, Node.js, Express, Knex, PostgreSQL) That allows users to view situations others have been in, create
+              situations, rate others solutions, and comment on situations to give advice.</CardText>
               <Button style={{color: "#add8e6"}}>GitHub</Button>
             </Card>
           </Col>

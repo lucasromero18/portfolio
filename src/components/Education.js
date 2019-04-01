@@ -73,56 +73,56 @@ class Education extends Component {
     this.previousCoc = this.previousCoc.bind(this);
     this.goToIndexCoc = this.goToIndexCoc.bind(this);
     this.onExitingCoc = this.onExitingCoc.bind(this);
-    this.onExitedcoc = this.onExitedCoc.bind(this);
+    this.onExitedCoc = this.onExitedCoc.bind(this);
   }
 
   onExitingGalv() {
-    this.animating = true;
+    this.animatingGalv = true;
   }
 
   onExitedGalv() {
-    this.animating = false;
+    this.animatingGalv = false;
   }
 
   nextGalv() {
-    if (this.animating) return;
+    if (this.animatingGalv) return;
     const nextIndex = this.state.galvActiveIndex === galvItems.length - 1 ? 0 : this.state.galvActiveIndex + 1;
     this.setState({ galvActiveIndex: nextIndex });
   }
 
   previousGalv() {
-    if (this.animating) return;
+    if (this.animatingGalv) return;
     const nextIndex = this.state.galvActiveIndex === 0 ? galvItems.length - 1 : this.state.galvActiveIndex - 1;
     this.setState({ galvActiveIndex: nextIndex });
   }
 
   goToIndexGalv(newIndex) {
-    if (this.animating) return;
+    if (this.animatingGalv) return;
     this.setState({ galvActiveIndex: newIndex });
   }
 
   onExitingCoc() {
-    this.animating = true;
+    this.animatingCollege = true;
   }
 
   onExitedCoc() {
-    this.animating = false;
+    this.animatingCollege = false;
   }
 
   nextCoc() {
-    if (this.animating) return;
+    if (this.animatingCollege) return;  
     const nextIndex = this.state.cocActiveIndex === cocItems.length - 1 ? 0 : this.state.cocActiveIndex + 1;
     this.setState({ cocActiveIndex: nextIndex });
   }
 
   previousCoc() {
-    if (this.animating) return;
+    if (this.animatingCollege) return;
     const nextIndex = this.state.cocActiveIndex === 0 ? cocItems.length - 1 : this.state.cocActiveIndex - 1;
     this.setState({ cocActiveIndex: nextIndex });
   }
 
   goToIndexCoc(newIndex) {
-    if (this.animating) return;
+    if (this.animatingCollege) return;
     this.setState({ cocActiveIndex: newIndex });
   }
   
