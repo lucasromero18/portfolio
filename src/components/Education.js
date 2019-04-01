@@ -8,16 +8,40 @@ import {
   CarouselCaption
 } from 'reactstrap';
 
-const items = [
+const galvItems = [
   {
-    src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADgCAMAAADCMfHtAAAAkFBMVEX////2jx6mqKv1hwD96NWipKjS09T1hgD2igD2jRf2jhn3oUv2iwn4q2GgoqX2jBH71Lf+8uf++PH7z6v39/f5vYn//Pn4r2yvsbT5uYH83MHX2Nnd3t/3olb3nUTo6erGx8n83sX6yqL5s3b95tO7vb/6w5T97uD4q2T3lSj3lzP71LL5uoT84sv3mj76wI723ZyJAAAJY0lEQVR4nO2d63qqOhCGQbQERCiIotaz9Vzb+7+7DSoHySQEdS8mPHy/3AVcvDvJzCSZiYrSqFGjRo0aNWrUqFGjRo0aNapAq1kvp9m+6nd6rz51Jye9XfU7vVefRM1JawglU0Moq4Jz/KmmhIGmj+8f60kYhFSkO7x+lojQX462H0J3Blco5+RF/yEP4cLudFqdll98Z3BnMswIUR7CTuuqUeGNQYJkHD2JCKf2jdAuasQgQ2Qch/IQftzb0J7y7wsegJy5PIRfMeGCe9shx0M2K1kI/Tthi3tXHlBVrbkpCaEysos7aU/L06gqBYiVcLqcjmx7xO2j7o+q0UCyEEbyi53h+Uj1U5kIhbTWjJoTKl63oBmlJ1SUgV53QuXMRawDIR+xFoRKn4NYD0Llh21uakKozJlOoy6ELrOf1oVQ+WP1U1SEAmsWbAFBNzLCj1HHbi3580GezsBMAxPhonObEdrLp7+C0YhICBf3dZlXENfwSERC2EpVtDTDlAd3UxyEUzuDWLyCyNDBwUu4bWUb8VmTOgEbEQfh6IHwaXtq1Z4wgLopDsLlW3qpcoasKQ7C91gaxYUGIg7CbDftPB/WKCbg9JEQph7/hU4KD0QkhIrfujJ27FEuqPF9gXXTWFBYg4UwHIuhUxwtfWUxSon8KBy3w4BcEPICDEQ8hKkSnC/7vkHTEYxWocANI2GsbcbCdsQsrDw7M5GWWRciiNill2vwEj74yAhxKfAQYEzxErbyEnEjOzo0RUu4sPOEIo3Yp90FWsJlh2pEgZEITKDQEo4oQJFu2q494b72hB699I2WcEsT8lNPbpKI8IOyNEI+XyJCn/YWXwKPSeQtgG4q8pRMcamf66ZiK8VHabK+wrj0kdAWSxg+SUQYQtmlAZVfanKBi3A4ST5O7dHC396mwJ2CDLeM6N1uXITzdfJxe2XyP7aj0fZDfPmNniCiIuzq/Ve/gt6dwUTYtcjLhPQUGBFh11JfJ8TchiFgvQkjQJWsi2/kq4fW0lwB30A4w0p4A3wDIVZvcQdUrd2r34Q0pokBVevv1a/CGXkngKoVF0r6H+WUTB1RrpemgKoT3P/m250yspPpP8aVqAygasziv9KrpVxt4+cQrmJkAVVjHv+5HGBreX8M4VrbA6BqnuK/A4uJHCUL/vjWS+c5y2AO7xegxUQOYWxpvrERdvOmj3j3K8C2BY8wXsOhCyyrJaQAVS0+aoVeLuUpSaMCUhUqJQQCkNX9Un5/tIAwXu8fIPOH9HQ1mT7RC8Jcwvgbe8j2gH+o/+NJUFPOXSQO/xfZijA9alKXX8ZdJM5iiC1jaEXbdhJfK2NME2cBuMNqCYEX0t37tWkJwsSUAs6iWkKgU2nxmnApUxN/IWBKK/b49C5DOkMsAZjE3VB9V7WEtHE3uvE18YGYDMMhvgxaIMEnidvohBqWEn8PpSZWTDjhDETxbpp4Q2gYVkwIVA06m/iiaGia7n7Tw7pyQqhCIvGIota0Ez+wB6ssKyaEcgmTbio2R0zT3f4wVpQAmXbOIb4o1ohpHhFcnlcxIVQhkYQ1Qg6jk2x/w2VPVRNCxsEaJFcFmjBNIwLygzEQQgY+cYkCPjEtkvpmVHNXTQg56UwjFk31M0k2jCasnBCsqNOSkViAaKeJYJ+MQufqCccAojNLry9abHOTqeMbOqwDlSonBLJ6w7fK7nZvGc1obzP5phvQF6IgBBbcQunZA5wX2w6dimlvs0k2nPNbqicEnH50KJmXvcefblt2sh0Vftp+PeQLw/EaFsIh2L+MU/4+fzH9um4VThf5bOg94ZxqVj0h48wOZ+4VP3rT3uId24aA0IPPQnBUwcPUL7wWREHIOnjFIJ8iT691/sF7GAiZvkw7FPbUfZfl6TERKn3WWzraD5dxH+hFR+7hIFROzPe0yObCempy0MGTMDASQqvxaTuS8cTNPTB0PwOiCfBhIVR23NFkadqxO971J6vLZfW53m3mpkZAPGBEIyFUugXtYRoOIUQLRYjlGAzTZAVoM/cUj/XSZeT8os3cC9Xmn2ApIsPwMBMqn68impaLN/vyKt7xjiKAJIryUBO+hmg41zAWN2HYUZ82N456c5nICZW2I+TEacU/b4GeUPEKA2lQyU+U4CeMMlBKN6NF0oIwCQgV71A8X8jK0IPM/EMGQkX5nonMGe582vw7+6wchKHF6WnM9c+sHG0+eXxSFsJwPjUgGneBKcQjekDNHeUhDHX5OemEscBhWBrpnYf0Q1IRhnLPm+N9vnST41jRHMrq7S4AniIfYSRv/7keB73ZVYfgrz9p52f8GclIWE4NofxqCOUX9hMHXhdwLkbNfi2XzouqGyG9jaVzvKeMAqrz4OBHVgH1h6RehPQWj3ms+p3eK7pGxZwXPyWTeHVG9dCYWv6wfqp+p/eKDmleP4gClaAyo1XxYxIJSAOsmcOHyoCrfqf3ip471cyUAgeWv34eDCpB1fjMbBwpBVRy1ysqBTppzYbhju6kNfP3wGZOvbwh4AyN36pf6q0CNnHq1UmBUZipoKqBoDo/p1f1W71TUCm+js3dey+cRwclqKKzM95RPxTfBWsFJYxpQrn+/06eaqhEvIzkQeDPkZlU2U21cs1oIDnOM2vwLvRrZKo+KX7yH8o1bpbC1Mq/l6tCKUbpCRso5FrJS6Y5aoL6dsAcKh3VrtpD8Rk5leqpjKogUvZ/1P+qXHWdoYlPzL0enMxompgmhm2q+IwcBdcA16yqElTOngaMDE63+BWHfZX1c+ME00p3WwPHkaGf+vyqrgFhFh46mOzoBQaM2pGQ2ZphdNq7Eyd70XQwDcJfVke7NiTRzd7f+dv14lf23Ev/p1uQt4hs6/7Az+w2HYtEyXvEMY/mtfSJWAU5xKisTKSxYJkFGJpBgLiitUh95lB8RggBw7jLerLMgpap49xN87o8e1NCjvVd/K9Vo8HzBUEZPTu//Ce6OELZ+TyZ+qD436lQw+DFZrQMnEMwo4n1wmg09A2mQIalP7FCElphpI5qwsuWu9GfYDS0E0YnyJC7YU8ZYDl6vjQIu7ydKnZawrX5iHbAFoaK6LKxtKL4OgrKNa13RuwB+boMfolG4GW06IgFS9NO44m0eDd5l/VmTvTr3MlybrKudU/6sTegTgORVl77cl7v/jZBcOgFm/Fuff7GNcFt1KhRo0aNGjVq1KhRo0aN6qD/AJivkVq6Q99cAAAAAElFTkSuQmCC',
+    src: 'https://www.logolynx.com/images/logolynx/46/463d4095702ef4e7ae91f3124d384f9a.jpeg',
   },
   {
-    src: 'data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15ba800aa20%20text%20%7B%20fill%3A%23444%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15ba800aa20%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23666%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22247.3203125%22%20y%3D%22218.3%22%3ESecond%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E'
+    src: 'http://dtphx.org/wp-content/uploads/2017/12/IMG_0441.jpg' 
   },
   {
-    src: 'data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15ba800aa21%20text%20%7B%20fill%3A%23333%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15ba800aa21%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23555%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22277%22%20y%3D%22218.3%22%3EThird%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E'
+    src: 'http://www.tldc19.com/wp-content/uploads/2018/11/front-desk.png'
+  },
+  {
+    src: 'https://i1.wp.com/modeeffect.com/wp-content/uploads/2018/10/IMG_8787.jpg?resize=3682%2C2070&ssl=1'
+  },
+  {
+    src: 'https://eventective-media.azureedge.net/1912313_md.jpg'
   }
+];
+
+const cocItems = [
+  {
+    src: 'https://www.canyons.edu/Offices/PIO/PublishingImages/Logos/coc_logo_1200px.jpg',
+  },
+  {
+    src: 'https://www.klassencorp.com/wp-content/uploads/2016/08/college-of-the-canyons-klassen-project.jpg'
+  },
+  {
+    src: 'https://i.pinimg.com/originals/f7/88/f7/f788f7498e0e17fe5e6c892468e2a305.jpg'
+  },
+  {
+    src: 'https://www.canyons.edu/Offices/PIO/publishingimages/resources/aliso_hall_6x4_300.jpg'
+  },
+  {
+    src: 'https://static1.squarespace.com/static/54ca7600e4b094de1a773024/54efac06e4b0844ebbc29d0f/54efaef7e4b0ad929f9960cb/1424994084247/COC+1.jpg?format=1000w'
+  },
 ];
 
 
@@ -39,44 +63,69 @@ class Education extends Component {
 
   constructor(props) {
     super(props);
-    this.state = { activeIndex: 0 };
-    this.next = this.next.bind(this);
-    this.previous = this.previous.bind(this);
-    this.goToIndex = this.goToIndex.bind(this);
-    this.onExiting = this.onExiting.bind(this);
-    this.onExited = this.onExited.bind(this);
+    this.state = { galvActiveIndex: 0, cocActiveIndex: 0, galv: false, coc: false };
+    this.nextGalv = this.nextGalv.bind(this);
+    this.previousGalv = this.previousGalv.bind(this);
+    this.goToIndexGalv = this.goToIndexGalv.bind(this);
+    this.onExitingGalv = this.onExitingGalv.bind(this);
+    this.onExitedGalv = this.onExitedGalv.bind(this);
+    this.nextCoc = this.nextCoc.bind(this);
+    this.previousCoc = this.previousCoc.bind(this);
+    this.goToIndexCoc = this.goToIndexCoc.bind(this);
+    this.onExitingCoc = this.onExitingCoc.bind(this);
+    this.onExitedcoc = this.onExitedCoc.bind(this);
   }
 
-  onExiting() {
+  onExitingGalv() {
     this.animating = true;
   }
 
-  onExited() {
+  onExitedGalv() {
     this.animating = false;
   }
 
-  next() {
+  nextGalv() {
     if (this.animating) return;
-    const nextIndex = this.state.activeIndex === items.length - 1 ? 0 : this.state.activeIndex + 1;
-    this.setState({ activeIndex: nextIndex });
+    const nextIndex = this.state.galvActiveIndex === galvItems.length - 1 ? 0 : this.state.galvActiveIndex + 1;
+    this.setState({ galvActiveIndex: nextIndex });
   }
 
-  previous() {
+  previousGalv() {
     if (this.animating) return;
-    const nextIndex = this.state.activeIndex === 0 ? items.length - 1 : this.state.activeIndex - 1;
-    this.setState({ activeIndex: nextIndex });
+    const nextIndex = this.state.galvActiveIndex === 0 ? galvItems.length - 1 : this.state.galvActiveIndex - 1;
+    this.setState({ galvActiveIndex: nextIndex });
   }
 
-  goToIndex(newIndex) {
+  goToIndexGalv(newIndex) {
     if (this.animating) return;
-    this.setState({ activeIndex: newIndex });
+    this.setState({ galvActiveIndex: newIndex });
+  }
+
+  onExitingCoc() {
+    this.animating = true;
+  }
+
+  onExitedCoc() {
+    this.animating = false;
+  }
+
+  nextCoc() {
+    if (this.animating) return;
+    const nextIndex = this.state.cocActiveIndex === cocItems.length - 1 ? 0 : this.state.cocActiveIndex + 1;
+    this.setState({ cocActiveIndex: nextIndex });
+  }
+
+  previousCoc() {
+    if (this.animating) return;
+    const nextIndex = this.state.cocActiveIndex === 0 ? cocItems.length - 1 : this.state.cocActiveIndex - 1;
+    this.setState({ cocActiveIndex: nextIndex });
+  }
+
+  goToIndexCoc(newIndex) {
+    if (this.animating) return;
+    this.setState({ cocActiveIndex: newIndex });
   }
   
-
-  state = {
-    galv: false,
-    coc: false
-  }
   
   //  galvanizeLocation = {
   //   center: {
@@ -103,16 +152,31 @@ class Education extends Component {
 
     render() {
 
-      const { activeIndex } = this.state;
+      const { galvActiveIndex } = this.state;
 
-      const slides = items.map((item) => {
+      const galvSlides = galvItems.map((item) => {
         return (
           <CarouselItem
-            onExiting={this.onExiting}
-            onExited={this.onExited}
+            onExiting={this.onExitingGalv}
+            onExited={this.onExitedGalv}
             key={item.src}
           >
-            <img src={item.src} alt={item.altText} />
+            <img style={{width: "500px", height: "300px"}} src={item.src} alt={item.altText} />
+            <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
+          </CarouselItem>
+        );
+      });
+
+      const { cocActiveIndex } = this.state;
+
+      const cocSlides = cocItems.map((item) => {
+        return (
+          <CarouselItem
+            onExiting={this.onExitingCoc}
+            onExited={this.onExitedCoc}
+            key={item.src}
+          >
+            <img style={{width: "500px", height: "300px"}} src={item.src} alt={item.altText} />
             <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
           </CarouselItem>
         );
@@ -135,14 +199,14 @@ class Education extends Component {
          </div> : null} */}
           <div style={{float: "right", height: "250px", width: "500px"}}>
           <Carousel
-              activeIndex={activeIndex}
-              next={this.next}
-              previous={this.previous}
+              activeIndex={galvActiveIndex}
+              next={this.nextGalv}
+              previous={this.previousGalv}
             >
-              <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
-              {slides}
-              <CarouselControl direction="prev" onClickHandler={this.previous} />
-              <CarouselControl direction="next" onClickHandler={this.next} />
+              <CarouselIndicators items={galvItems} activeIndex={galvActiveIndex} onClickHandler={this.goToIndexGalv} />
+              {galvSlides}
+              <CarouselControl direction="prev" onClickHandler={this.previousGalv} />
+              <CarouselControl direction="next" onClickHandler={this.nextGalv} />
           </Carousel>
           </div>
           <div>
@@ -169,14 +233,14 @@ class Education extends Component {
          </div> : null} */}
           <div style={{float: "right", height: "250px", width: "500px"}}>
           <Carousel
-              activeIndex={activeIndex}
-              next={this.next}
-              previous={this.previous}
+              activeIndex={cocActiveIndex}
+              next={this.nextCoc}
+              previous={this.previousCoc}
             >
-              <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
-              {slides}
-              <CarouselControl direction="prev" onClickHandler={this.previous} />
-              <CarouselControl direction="next" onClickHandler={this.next} />
+              <CarouselIndicators items={cocItems} activeIndex={cocActiveIndex} onClickHandler={this.goToIndexCoc} />
+              {cocSlides}
+              <CarouselControl direction="prev" onClickHandler={this.previousCoc} />
+              <CarouselControl direction="next" onClickHandler={this.nextCoc} />
           </Carousel>
           </div>
           <div>
