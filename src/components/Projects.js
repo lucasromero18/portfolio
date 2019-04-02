@@ -29,7 +29,8 @@ class Projects extends Component {
               <CardTitle style={{textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6", fontSize: "2em"}}>Romero Fitness</CardTitle>
               <CardText style={{textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6"}}>A Fitness Application (built with 
               HTML, CSS, Bootstrap, and javascript) that contains direction with various training styles, accessibility to a body fat analyzer / 
-              chart to determine where the users health may lie. </CardText>
+              chart to determine where the users health may lie.</CardText>
+              <h1 style={{fontSize: ".9em", textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6"}}>(4 day timeline)</h1>
               <Button style={{color: "#add8e6"}}>Github</Button>
             </Card>
           </Col>
@@ -38,7 +39,8 @@ class Projects extends Component {
               <CardTitle style={{textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6", fontSize: "2em"}}>techConnect</CardTitle>
               <CardText style={{textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6"}}>A tech-industry dating 
               application (built with Node.js, Knex, Express, PostgreSQL, EJS, and Materialize) that brings users together based off of tech
-              related interests. Swipe away with techConnect! </CardText>
+              related interests. Swipe away with techConnect!</CardText>
+              <h1 style={{fontSize: ".9em", textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6"}}>(4 day timeline / Team Project)</h1>
               <Button style={{color: "#add8e6"}}>Github</Button>
             </Card>
           </Col>
@@ -50,7 +52,8 @@ class Projects extends Component {
               <CardTitle style={{textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6", fontSize: "2em"}}>F.I.T.</CardTitle>
               <CardText style={{textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6"}}>A Fitness Inventory Application
               (built with React, Materialize, Node.js, Knex, Express, PostgreSQL) that allows users to construct their "dream" at home gym with
-              various items, and checkout items in their cart. </CardText>
+              various items, and checkout items in their cart.</CardText>
+              <h1 style={{fontSize: ".9em", textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6"}}>(4 day timeline)</h1>
               <Button style={{color: "#add8e6"}}>Github</Button>
             </Card>
           </Col>
@@ -60,6 +63,7 @@ class Projects extends Component {
               <CardText style={{textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6"}}>A video game review application 
               (built with React, MDBootstrap, Node.js, Knex, Express, PostgreSQL) that allows users to view the latest video games, and 
               leave reviews to inform others about that game.</CardText>
+              <h1 style={{fontSize: ".9em", textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6"}}>(4 day timeline / Team Project)</h1>
               <Button style={{color: "#add8e6"}}>Github</Button>
             </Card>
           </Col>
@@ -71,6 +75,7 @@ class Projects extends Component {
               <CardText style={{textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6"}}>A Social Media Application (built
               with Vue.js, VueX, Vuetify, Node.js, Express, Knex, PostgreSQL) That allows users to view situations others have been in, create
               situations, rate others solutions, and comment on situations to give advice.</CardText>
+              <h1 style={{fontSize: ".9em", textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6"}}>(2 week timeline)</h1>
               <Button style={{color: "#add8e6"}}>GitHub</Button>
             </Card>
           </Col>

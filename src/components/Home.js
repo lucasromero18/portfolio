@@ -3,7 +3,6 @@ import AboutMe from './AboutMe.js'
 import Skills from './Skills.js'
 import Projects from './Projects.js'
 import Education from './Education.js'
-import Work from './Work.js'
 import Header from './Header.js'
 import Contact from './Contact.js'
 import Particles from 'react-particles-js'
@@ -184,7 +183,6 @@ class Home extends Component {
           <Skills />
           <Projects />
           <Education />
-          <Work />
           <Contact />
         </div>
       );
