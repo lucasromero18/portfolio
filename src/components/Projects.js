@@ -24,7 +24,7 @@ class Projects extends Component {
         </div>
             <div>
           <Row>
-          <Col sm="6">
+          <Col style={{paddingLeft: "3%"}}  sm="6">
             <Card body style={{marginTop: "8%", backgroundColor: "#808080"}}>
               <CardTitle style={{textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6", fontSize: "2em"}}>Romero Fitness</CardTitle>
               <CardText style={{textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6"}}>A Fitness Application (built with 
@@ -34,12 +34,12 @@ class Projects extends Component {
               <Button style={{color: "#add8e6"}}>Github</Button>
             </Card>
           </Col>
-          <Col sm="6">
+          <Col style={{paddingRight: "3%"}} sm="6">
             <Card body style={{marginTop: "8%", backgroundColor: "#808080"}}>
               <CardTitle style={{textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6", fontSize: "2em"}}>techConnect</CardTitle>
               <CardText style={{textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6"}}>A tech-industry dating 
               application (built with Node.js, Knex, Express, PostgreSQL, EJS, and Materialize) that brings users together based off of tech
-              related interests. Swipe away with techConnect!</CardText>
+              related interests, such as languages and frameworks. Swipe away with techConnect!</CardText>
               <h1 style={{fontSize: ".9em", textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6"}}>(4 day timeline / Team Project)</h1>
               <Button style={{color: "#add8e6"}}>Github</Button>
             </Card>
@@ -47,17 +47,17 @@ class Projects extends Component {
         </Row>
         <div>
         <Row>
-          <Col sm="6">
+          <Col style={{paddingLeft: "3%"}} sm="6">
             <Card body style={{marginTop: "5%", backgroundColor: "#808080"}}>
               <CardTitle style={{textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6", fontSize: "2em"}}>F.I.T.</CardTitle>
               <CardText style={{textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6"}}>A Fitness Inventory Application
-              (built with React, Materialize, Node.js, Knex, Express, PostgreSQL) that allows users to construct their "dream" at home gym with
+              (built with React, Materialize, Node.js, Knex, Express, PostgreSQL) that allows one to construct their "dream" at home gym with
               various items, and checkout items in their cart.</CardText>
               <h1 style={{fontSize: ".9em", textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6"}}>(4 day timeline)</h1>
               <Button style={{color: "#add8e6"}}>Github</Button>
             </Card>
           </Col>
-          <Col sm="6">
+          <Col style={{paddingRight: "3%"}}  sm="6">
             <Card body style={{marginTop: "5%", backgroundColor: "#808080"}}>
               <CardTitle style={{textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6", fontSize: "2em"}}>Real Gaming Reviews</CardTitle>
               <CardText style={{textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6"}}>A video game review application 
@@ -70,7 +70,7 @@ class Projects extends Component {
         </Row>
         <Row>
           <Col sm="6">
-            <Card body style={{marginTop: "5%", marginLeft: "46%", marginBottom: "5%", width: "55vw", backgroundColor: "#808080"}}>
+            <Card body style={{marginTop: "5%", marginLeft: "46%", marginBottom: "5%", width: "55vw", backgroundColor: "#808080", marginBottom: "15%"}}>
               <CardTitle style={{textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6", fontSize: "2em"}}>Yikers!</CardTitle>
               <CardText style={{textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6"}}>A Social Media Application (built
               with Vue.js, VueX, Vuetify, Node.js, Express, Knex, PostgreSQL) That allows users to view situations others have been in, create

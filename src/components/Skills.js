@@ -30,15 +30,7 @@ const soft = {
   styles: {
     color: '#808080',
     fontFamily: 'Montserrat, sans-serif',
-    marginLeft: "26%"
-  }
-}
-
-
-const skillsContainer = {
-  styles: {
-    marginTop: "5%",
-    paddingBottom: "4%"
+    marginLeft: "50%"
   }
 }
 
@@ -53,36 +45,36 @@ class Skills extends Component {
                 <div style={{marginTop: "5%"}}>
                 <div style={{display: "inline-block"}}>
                   <h1 style={technical.styles}>Technical Skills</h1>
-                    <div style={skillsContainer.styles}>
-                      <TroyBar percentageColor={'#add8e6'} skill={"HTML"} color={'#add8e6'} val={0.90} widthHeight={150} size={1.3}/>
-                      <TroyBar percentageColor={'#add8e6'} skill={"CSS"} color={'#add8e6'} val={0.90} widthHeight={150} size={1.3}/>
-                      <TroyBar percentageColor={'#add8e6'} skill={"javascript"} color={'#add8e6'} val={0.80} widthHeight={150} size={1.3}/>
-                      <TroyBar percentageColor={'#add8e6'} skill={"React"} color={'#add8e6'} val={0.75} widthHeight={150} size={1.3}/>
+                    <div style={{marginTop: "5%", paddingBottom: "4%"}}>
+                      <TroyBar percentageColor={'#add8e6'} skill={"HTML"} color={'#add8e6'} val={0.90} widthHeight={125} size={1.3}/>
+                      <TroyBar percentageColor={'#add8e6'} skill={"CSS"} color={'#add8e6'} val={0.90} widthHeight={125} size={1.3}/>
+                      <TroyBar percentageColor={'#add8e6'} skill={"javascript"} color={'#add8e6'} val={0.80} widthHeight={125} size={1.3}/>
+                      <TroyBar percentageColor={'#add8e6'} skill={"React"} color={'#add8e6'} val={0.75} widthHeight={125} size={1.3}/>
                     </div>
-                    <div style={skillsContainer.styles}>
-                      <TroyBar percentageColor={'#add8e6'} skill={"Vue"} color={'#add8e6'} val={0.65} widthHeight={150}/>
-                      <TroyBar percentageColor={'#add8e6'} skill={"State Management"} color={'#add8e6'} val={0.50} widthHeight={150} size={1}/>
-                      <TroyBar percentageColor={'#add8e6'} skill={"Node"} color={'#add8e6'} val={0.65} widthHeight={150} size={1.3}/>
-                      <TroyBar percentageColor={'#add8e6'} skill={"SQL"} color={'#add8e6'} val={0.75} widthHeight={150} size={1.3}/>
+                    <div style={{marginTop: "5%", paddingBottom: "4%"}}>
+                      <TroyBar percentageColor={'#add8e6'} skill={"Vue"} color={'#add8e6'} val={0.65} widthHeight={125}/>
+                      <TroyBar percentageColor={'#add8e6'} skill={"State Management"} color={'#add8e6'} val={0.50} widthHeight={125} size={0.9}/>
+                      <TroyBar percentageColor={'#add8e6'} skill={"Node"} color={'#add8e6'} val={0.65} widthHeight={125} size={1.3}/>
+                      <TroyBar percentageColor={'#add8e6'} skill={"SQL"} color={'#add8e6'} val={0.75} widthHeight={125} size={1.3}/>
                     </div>
-                    <div style={skillsContainer.styles}>
-                      <TroyBar percentageColor={'#add8e6'} skill={"MVC"} color={'#add8e6'} val={0.80} widthHeight={150} size={1.3}/>
-                      <TroyBar percentageColor={'#add8e6'}skill={"Version Control"} color={'#add8e6'} val={0.90} widthHeight={150} size={1.2}/>
+                    <div style={{marginTop: "5%", paddingBottom: "4%"}}>
+                      <TroyBar percentageColor={'#add8e6'} skill={"MVC"} color={'#add8e6'} val={0.80} widthHeight={125} size={1.3}/>
+                      <TroyBar percentageColor={'#add8e6'}skill={"Version Control"} color={'#add8e6'} val={0.90} widthHeight={125} size={0.9}/>
                     </div>
                     </div>
                     <div style={{display: "inline-block", position: "absolute"}}>
                       <h1 style={soft.styles}>Soft Skills</h1>
-                        <div style={skillsContainer.styles}>
-                        <TroyBar percentageColor={'#808080'} skill={"Problem Solving"} color={'#808080'} val={0.80} widthHeight={150} size={1.09}/>
-                        <TroyBar percentageColor={'#808080'} skill={"Creativity"} color={'#808080'} val={0.90} widthHeight={150} size={1.3}/>
-                        <TroyBar percentageColor={'#808080'} skill={"Leadership"} color={'#808080'} val={0.90} widthHeight={150} size={1.3}/>
-                        <TroyBar percentageColor={'#808080'} skill={"Public Speaking"} color={'#808080'} val={1} widthHeight={150} size={1.15}/>
+                        <div style={{marginTop: "5%", paddingBottom: "4%", paddingLeft: "30%"}}>
+                        <TroyBar percentageColor={'#808080'} skill={"Problem Solving"} color={'#808080'} val={0.80} widthHeight={125} size={0.8}/>
+                        <TroyBar percentageColor={'#808080'} skill={"Creativity"} color={'#808080'} val={0.90} widthHeight={125} size={1.3}/>
+                        <TroyBar percentageColor={'#808080'} skill={"Leadership"} color={'#808080'} val={0.90} widthHeight={125} size={1.3}/>
+                        <TroyBar percentageColor={'#808080'} skill={"Public Speaking"} color={'#808080'} val={1} widthHeight={125} size={0.9}/>
                       </div>
-                      <div style={skillsContainer.styles}>
-                        <TroyBar percentageColor={'#808080'} skill={"Team Work"} color={'#808080'} val={1} widthHeight={150} size={1.4}/>
-                        <TroyBar percentageColor={'#808080'} skill={"Conflict Resolution"} color={'#808080'} val={0.85} widthHeight={150} size={1}/>
-                        <TroyBar percentageColor={'#808080'} skill={"Research"} color={'#808080'} val={0.80} widthHeight={150} size={1.3}/>
-                        <TroyBar percentageColor={'#808080'} skill={"Communication"} color={'#808080'} val={1} widthHeight={150} size={1.3}/>
+                      <div style={{marginTop: "5%", paddingBottom: "4%", paddingLeft: "30%"}}>
+                        <TroyBar percentageColor={'#808080'} skill={"Team Work"} color={'#808080'} val={1} widthHeight={125} size={1}/>
+                        <TroyBar percentageColor={'#808080'} skill={"Conflict Resolution"} color={'#808080'} val={0.85} widthHeight={125} size={0.8}/>
+                        <TroyBar percentageColor={'#808080'} skill={"Research"} color={'#808080'} val={0.80} widthHeight={125} size={1.3}/>
+                        <TroyBar percentageColor={'#808080'} skill={"Communication"} color={'#808080'} val={1} widthHeight={125} size={1.3}/>
                       </div>
                   </div>
               </div>

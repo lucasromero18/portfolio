@@ -52,7 +52,8 @@ const myImage = {
 const ihdContainer = {
   styles: {
     display: "flex",
-    marginTop: "5%"
+    marginTop: "5%",
+    paddingBottom: "5%"
   }
 }
 
