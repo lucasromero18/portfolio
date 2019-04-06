@@ -50,14 +50,14 @@ const education = {
   styles: {
     fontFamily: 'Montserrat, sans-serif',
     color: '#808080',
-    fontSize: "40px",
+    fontSize: "3em",
     fontWeight: "bold",
     textAlign: "center",
     paddingTop: "7%"
   }
 }
 
-const AnyReactComponent = ({ text }) => <div>{text}</div>;
+// const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
 class Education extends Component {
 
@@ -127,21 +127,21 @@ class Education extends Component {
   }
   
   
-   galvanizeLocation = {
-    center: {
-      lat: 33.439830,
-      lng: -112.067020
-    },
-    zoom: 13
-  };
+  //  galvanizeLocation = {
+  //   center: {
+  //     lat: 33.439830,
+  //     lng: -112.067020
+  //   },
+  //   zoom: 13
+  // };
 
-  cocLocation = {
-    center: {
-      lat: 34.404020,
-      lng: -118.569890
-    },
-    zoom: 13
-  };
+  // cocLocation = {
+  //   center: {
+  //     lat: 34.404020,
+  //     lng: -118.569890
+  //   },
+  //   zoom: 13
+  // };
 
   googleMaps = (campus) => {
    console.log([campus])
@@ -161,7 +161,7 @@ class Education extends Component {
             onExited={this.onExitedGalv}
             key={item.src}
           >
-            <img style={{width: "500px", height: "300px"}} src={item.src} alt={item.altText} />
+            <img style={{width: "30em", height: "20em"}} src={item.src} alt={item.altText} />
             <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
           </CarouselItem>
         );
@@ -176,7 +176,7 @@ class Education extends Component {
             onExited={this.onExitedCoc}
             key={item.src}
           >
-            <img style={{width: "500px", height: "300px"}} src={item.src} alt={item.altText} />
+            <img style={{width: "30em", height: "20em"}} src={item.src} alt={item.altText} />
             <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
           </CarouselItem>
         );
@@ -184,20 +184,20 @@ class Education extends Component {
       
       return (
         <div style={{backgroundColor: "#FFFAFA"}}>
-          <h1 style={education.styles}>Education <h1 style={{color: "#add8e6", fontSize: "40px", fontWeight: "bold", display: "inline"}}>History</h1></h1>
+          <h1 style={education.styles}>Education <h1 style={{color: "#add8e6", fontSize: "1em", fontWeight: "bold", display: "inline"}}>History</h1></h1>
           <div>
             <h1 style={{marginLeft: "2%", fontFamily: 'Montserrat, sans-serif', color: "#add8e6", fontSize: "2.5"}}>Galvanize</h1>
             <h1 style={{marginLeft: "2%", fontFamily: 'Montserrat, sans-serif', color: "#808080", fontSize: "1.5em"}}>Phoenix, AZ <button style={{display: "inline", color: "red"}}> <i onClick={() => this.googleMaps('galv')} class="fas fa-map-pin"></i></button></h1>
             <h1 style={{marginLeft: "2%", fontFamily: 'Montserrat, sans-serif', color: "#808080", fontSize: "1.5em"}}>September 2018 <i style={{fontSize: ".7em", color: "#add8e6"}} className="fas fa-arrow-circle-right"></i> <p style={{color: "#add8e6", fontFamily: 'Montserrat, sans-serif', display: "inline"}}>March 2019</p></h1>
-             {this.state.galv ? <div style={{ height: '50vh', width: '50%', marginLeft: "2%" }}>
+              {/* {this.state.galv ? <div style={{ height: '50vh', width: '50%', marginLeft: "2%" }}>
               <GoogleMapReact
                 bootstrapURLKeys={{key:'AIzaSyCf-we8wkTCTggl9WoiKauYqdwhTXke9RA'}}
                 defaultCenter={this.galvanizeLocation.center}
                 defaultZoom={this.galvanizeLocation.zoom}
               >
             </GoogleMapReact>
-         </div> : null} 
-          <div style={{float: "right", height: "250px", width: "500px"}}>
+         </div> : null}  */}
+          <div style={{float: "right", height: "20em", width: "30em", paddingRight: "2%"}}>
           <Carousel
               activeIndex={galvActiveIndex}
               next={this.nextGalv}
@@ -208,30 +208,28 @@ class Education extends Component {
               <CarouselControl direction="prev" onClickHandler={this.previousGalv} />
               <CarouselControl direction="next" onClickHandler={this.nextGalv} />
           </Carousel>
-          </div>
+          </div> 
           <div>
-          <p style={{width: "50%", marginLeft: "2%", fontFamily: 'Montserrat, sans-serif'}}>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a 
-              complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human 
-              happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to 
-              pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or 
-              desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure 
-              im some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some 
-              advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, 
-              or one who avoids a pain that produces no resultant pleasure?</p>
+          <p style={{width: "50%", marginLeft: "2%", fontFamily: 'Montserrat, sans-serif', fontSize: "1.2em"}}>Galvanize holds a Web Development Immersive Program
+           that highlights full-stack web development. Learning HTML, CSS, javascript, git, Node.js, Knex, Express, MVC, PostgreSQL, React, Vue,
+           and State Management within the duration of 6 months, felt like an overload at the time. I sit here and reflect every now and then,
+           on how effective, life changing, and amazing the Galvanize Immersive Program actually was. With deadlines as short as four days to 
+           create an application, assessments, sleepless nights, and mock interviews, I have been given the opportunity to take my programming 
+           abilities to a whole new level, and I owe every bit of programming knowledge to Galvanize.</p>
           </div>
           <div>
             <h1 style={{marginLeft: "2%", fontFamily: 'Montserrat, sans-serif', color: "#add8e6", fontSize: "2.5", marginTop: "5%"}}>College Of The Canyons</h1>
             <h1 style={{marginLeft: "2%", fontFamily: 'Montserrat, sans-serif', color: "#808080", fontSize: "1.5em"}}>Valencia, CA <button style={{display: "inline"}}><i style={{color: "red"}} onClick={() =>this.googleMaps('coc')} class="fas fa-map-pin"></i></button></h1>
             <h1 style={{marginLeft: "2%", fontFamily: 'Montserrat, sans-serif', color: "#808080", fontSize: "1.5em"}}>August 2016 <i style={{fontSize: ".7em", color: "#add8e6"}} className="fas fa-arrow-circle-right"></i> <p style={{color: "#add8e6", fontFamily: 'Montserrat, sans-serif', display: "inline"}}>February 2018</p></h1>
-             {this.state.coc ? <div style={{ height: '50vh', width: '50%', marginLeft: "2%" }}>
+              {/* {this.state.coc ? <div style={{ height: '50vh', width: '50%', marginLeft: "2%" }}>
               <GoogleMapReact
                 bootstrapURLKeys={{key:'AIzaSyCf-we8wkTCTggl9WoiKauYqdwhTXke9RA'}}
                 defaultCenter={this.cocLocation.center}
                 defaultZoom={this.cocLocation.zoom}
               >
             </GoogleMapReact>
-         </div> : null} 
-          <div style={{float: "right", height: "250px", width: "500px", paddingBottom: "5%"}}>
+         </div> : null}  */}
+          <div style={{float: "right", height: "20", width: "30em", paddingBottom: "5%", paddingRight: "2%"}}>
           <Carousel
               activeIndex={cocActiveIndex}
               next={this.nextCoc}
@@ -242,7 +240,7 @@ class Education extends Component {
               <CarouselControl direction="prev" onClickHandler={this.previousCoc} />
               <CarouselControl direction="next" onClickHandler={this.nextCoc} />
           </Carousel>
-          </div>
+          </div> 
           <div>
           <p style={{width: "50%", marginLeft: "2%", fontFamily: 'Montserrat, sans-serif', paddingBottom: "5%"}}>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a 
               complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human 
