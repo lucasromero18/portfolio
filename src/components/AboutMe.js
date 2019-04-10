@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import myImmy from '../lucas_port_immy.jpg';
 import { IncomingMessage } from 'http';
-import { UncontrolledCollapse, Button, CardBody, Card } from 'reactstrap';
+
 
 
 let test = require('progressbar.js');
@@ -81,9 +81,12 @@ const itemContainer = {
 
 
 class AboutMe extends Component {
+
+  
+
     render() {
       return (
-        <div style={{backgroundColor: "#F0F8FF"}}>
+        <div id="aboutme" style={{backgroundColor: "#F0F8FF", margin: '0'}}>
           <h1 style={aboutMeHeader.styles}>Who's <h1 style={{color: "#add8e6", fontSize: "1em", fontWeight: "bold", display: "inline", borderBottom: "2px solid #808080"}}>this</h1> guy?</h1>
             <div style={picImageContainer.styles}>
               <img style={myImage.styles} src={myImmy} />

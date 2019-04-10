@@ -187,7 +187,7 @@ class Education extends Component {
           <h1 style={education.styles}>Education <h1 style={{color: "#add8e6", fontSize: "1em", fontWeight: "bold", display: "inline"}}>History</h1></h1>
           <div>
             <h1 style={{marginLeft: "2%", fontFamily: 'Montserrat, sans-serif', color: "#add8e6", fontSize: "2.5"}}>Galvanize</h1>
-            <h1 style={{marginLeft: "2%", fontFamily: 'Montserrat, sans-serif', color: "#808080", fontSize: "1.5em"}}>Phoenix, AZ <button style={{display: "inline", color: "red"}}> <i onClick={() => this.googleMaps('galv')} class="fas fa-map-pin"></i></button></h1>
+            <h1 style={{marginLeft: "2%", fontFamily: 'Montserrat, sans-serif', color: "#808080", fontSize: "1.5em"}}>Phoenix, AZ <button style={{display: "inline", color: "red", background:'transparent', border: 'none'}}> <i onClick={() => this.googleMaps('galv')} class="fas fa-map-pin"></i></button></h1>
             <h1 style={{marginLeft: "2%", fontFamily: 'Montserrat, sans-serif', color: "#808080", fontSize: "1.5em"}}>September 2018 <i style={{fontSize: ".7em", color: "#add8e6"}} className="fas fa-arrow-circle-right"></i> <p style={{color: "#add8e6", fontFamily: 'Montserrat, sans-serif', display: "inline"}}>March 2019</p></h1>
               {/* {this.state.galv ? <div style={{ height: '50vh', width: '50%', marginLeft: "2%" }}>
               <GoogleMapReact
@@ -219,7 +219,7 @@ class Education extends Component {
           </div>
           <div>
             <h1 style={{marginLeft: "2%", fontFamily: 'Montserrat, sans-serif', color: "#add8e6", fontSize: "2.5", marginTop: "5%"}}>College Of The Canyons</h1>
-            <h1 style={{marginLeft: "2%", fontFamily: 'Montserrat, sans-serif', color: "#808080", fontSize: "1.5em"}}>Valencia, CA <button style={{display: "inline"}}><i style={{color: "red"}} onClick={() =>this.googleMaps('coc')} class="fas fa-map-pin"></i></button></h1>
+            <h1 style={{marginLeft: "2%", fontFamily: 'Montserrat, sans-serif', color: "#808080", fontSize: "1.5em"}}>Valencia, CA <button style={{display: "inline", background: 'transparent', border: 'none' }}><i style={{color: "red"}} onClick={() =>this.googleMaps('coc')} class="fas fa-map-pin"></i></button></h1>
             <h1 style={{marginLeft: "2%", fontFamily: 'Montserrat, sans-serif', color: "#808080", fontSize: "1.5em"}}>August 2016 <i style={{fontSize: ".7em", color: "#add8e6"}} className="fas fa-arrow-circle-right"></i> <p style={{color: "#add8e6", fontFamily: 'Montserrat, sans-serif', display: "inline"}}>February 2018</p></h1>
               {/* {this.state.coc ? <div style={{ height: '50vh', width: '50%', marginLeft: "2%" }}>
               <GoogleMapReact

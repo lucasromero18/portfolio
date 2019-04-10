@@ -6,6 +6,7 @@ import Education from './Education.js'
 import Header from './Header.js'
 import Contact from './Contact.js'
 import Particles from 'react-particles-js'
+import { Animate } from "react-simple-animate"
 import { Button } from 'reactstrap';
 
 
@@ -54,12 +55,14 @@ const viewWorkArrow = {
 
 
 class Home extends Component {
+
+  
     render() {
       return (
-        <div>
+        <div id="home">
           <h1 style={jumbo.styles}>Hello, I'm Lucas Romero.</h1>
           <h1 style={fullStack.styles}>I'm a Full Stack Web Developer.</h1>
-          <Button style={viewButton.styles} outline>View my work <i style={viewWorkArrow.styles} className="fas fa-arrow-circle-down"></i></Button>
+           <a href="#aboutme"><Button style={viewButton.styles} outline>View my work <i style={viewWorkArrow.styles} className="fas fa-arrow-circle-down"></i></Button></a>   
             <Particles 
                 params={
                   {

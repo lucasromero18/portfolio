@@ -18,7 +18,7 @@ const header = {
 class Projects extends Component {
     render() {
       return (
-      <div style={{backgroundColor: "#F5F5F5"}}>
+      <div id="applications" style={{backgroundColor: "#F5F5F5"}}>
         <div>
           <h1 style={header.styles}>Applications</h1>
         </div>

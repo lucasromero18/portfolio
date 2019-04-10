@@ -36,19 +36,19 @@ class Header extends Component {
         <Navbar style={navBar.styles} expand="md">
           <Nav navbar className="mx-auto">
             <NavItem>
-                <NavbarBrand style={navLinks.styles}>Home</NavbarBrand>
+                <a href="#home"><NavbarBrand style={navLinks.styles}>Home</NavbarBrand></a>
             </NavItem>
             <NavItem>
-                <NavbarBrand style={navLinks.styles}>About</NavbarBrand>
+            <a href="#aboutme"><NavbarBrand style={navLinks.styles}>About</NavbarBrand></a>
             </NavItem>
             <NavItem>
-                <NavbarBrand style={navLinks.styles}>Projects</NavbarBrand>
+            <a href="#applications"><NavbarBrand style={navLinks.styles}>Projects</NavbarBrand></a>
             </NavItem>
             <NavItem>
-                <NavbarBrand style={navLinks.styles}>Skills</NavbarBrand>
+            <a href="#tsSkills"><NavbarBrand style={navLinks.styles}>Skills</NavbarBrand></a>
             </NavItem>
             <NavItem>
-                <NavbarBrand style={navLinks.styles}>Contact</NavbarBrand>
+            <a href="#contactInfo"><NavbarBrand style={navLinks.styles}>Contact</NavbarBrand></a>
             </NavItem>
           </Nav>
         </Navbar>
