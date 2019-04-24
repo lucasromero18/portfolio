@@ -23,11 +23,6 @@ class Contact extends Component {
               <a href="mailto:lucasjulromero@gmail.com"><i style={{color: "#add8e6", fontSize: "4em"}} class="far fa-envelope"></i></a>
             </div>
           </Col>
-          <Col sm="1">
-            <div>
-            <a href="https://www.instagram.com/lucasromero/"><i style={{color: "#add8e6", fontSize: "4em"}} class="fab fa-instagram"></i></a>
-            </div>
-          </Col>
           </Row>
         </div>
       </div>

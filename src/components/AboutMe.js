@@ -72,7 +72,8 @@ const icon = {
 const itemContainer = {
   styles: {
     flex: '1',
-    textAlign: 'center'
+    textAlign: 'center',
+    marginTop: "2em"
   }
 }
 
