@@ -26,6 +26,14 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
+    <script>
+      if (screen && screen.width > 750) {
+      document.write('<script type="text/javascript" src="foo.js"><\/script>');
+      }else{ 
+        return "Application is not available on mobile devices."
+      }
+    </script>
+
 
   </head>
   <body>

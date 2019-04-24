@@ -45,10 +45,13 @@ class Header extends Component {
             <a href="#aboutme"><NavbarBrand style={navLinks.styles}>About</NavbarBrand></a>
             </NavItem>
             <NavItem>
-            <a href="#applications"><NavbarBrand style={navLinks.styles}>Projects</NavbarBrand></a>
+            <a href="#tsSkills"><NavbarBrand style={navLinks.styles}>Skills</NavbarBrand></a>
             </NavItem>
             <NavItem>
-            <a href="#tsSkills"><NavbarBrand style={navLinks.styles}>Skills</NavbarBrand></a>
+            <a href="#applications"><NavbarBrand style={navLinks.styles}>Applications</NavbarBrand></a>
+            </NavItem>
+            <NavItem>
+            <a href="#educated"><NavbarBrand style={navLinks.styles}>Education</NavbarBrand></a>
             </NavItem>
             <NavItem>
             <a href="#contactInfo"><NavbarBrand style={navLinks.styles}>Contact</NavbarBrand></a>

@@ -180,7 +180,8 @@ class Education extends Component {
       });
       
       return (
-        <div style={{backgroundColor: "#FFFAFA"}}>
+        <>
+        <div id="educated" style={{backgroundColor: "#FFFAFA"}}>
           <h1 style={education.styles}>Education <h1 style={{color: "#add8e6", fontSize: "1em", fontWeight: "bold", display: "inline"}}>History</h1><i style={{marginLeft: ".5em"}} class="fas fa-book"></i></h1>
           <div>
             <h1 style={{marginTop: "2em", marginLeft: "1.1em", fontFamily: 'Montserrat, sans-serif', color: "#add8e6", fontSize: "2.5"}}>Galvanize</h1>
@@ -249,6 +250,7 @@ class Education extends Component {
           </div>
         </div>
       </div>
+      </>
       );
     }
   }

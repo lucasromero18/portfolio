@@ -9,7 +9,7 @@ const header = {
     fontSize: "3.5em",
     fontWeight: "bold",
     color: "#808080",
-    marginBottom: "1em"
+    marginBottom: ".5em"
   }
 }
 
@@ -30,7 +30,7 @@ class Projects extends Component {
               HTML, CSS, Bootstrap, and javascript) that contains direction with various training styles, accessibility to a body fat analyzer / 
               chart to determine where the users health may lie.</CardText>
               <h1 style={{fontSize: ".9em", textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6"}}>(4 day timeline)</h1>
-              <a href="https://github.com/lucasromero18/q1-project-romero-fitness"><Button style={{color: "#add8e6", marginLeft: "42%"}}>Github</Button></a>
+              <a href="https://github.com/lucasromero18/q1-project-romero-fitness"><Button style={{color: "#add8e6", marginLeft: "14.5em"}}>Github</Button></a>
             </Card>
           </Col>
           <Col style={{paddingRight: "2.5em"}} sm="6">
@@ -40,7 +40,7 @@ class Projects extends Component {
               application (built with Node.js, Knex, Express, PostgreSQL, EJS, and Materialize) that brings users together based off of tech
               related interests, such as languages and frameworks. Swipe away with techConnect!</CardText>
               <h1 style={{fontSize: ".9em", textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6"}}>(4 day timeline / Team Project)</h1>
-              <a href="https://github.com/lucasromero18/techConnect"><Button style={{color: "#add8e6", marginLeft: "43%"}}>Github</Button></a>
+              <a href="https://github.com/lucasromero18/techConnect"><Button style={{color: "#add8e6", marginLeft: "15em"}}>Github</Button></a>
             </Card>
           </Col>
         </Row>
@@ -53,7 +53,7 @@ class Projects extends Component {
               (built with React, Materialize, Node.js, Knex, Express, PostgreSQL) that allows one to construct their "dream" at home gym with
               various items, and checkout items in their cart.</CardText>
               <h1 style={{fontSize: ".9em", textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6"}}>(4 day timeline)</h1>
-              <a href="https://github.com/lucasromero18/q3project-frontend"><Button style={{color: "#add8e6", marginLeft: "42%"}}>Github</Button></a>
+              <a href="https://github.com/lucasromero18/q3project-frontend"><Button style={{color: "#add8e6", marginLeft: "14.5em"}}>Github</Button></a>
             </Card>
           </Col>
           <Col style={{paddingRight: "2.5em"}}  sm="6">
@@ -63,7 +63,7 @@ class Projects extends Component {
               (built with React, MDBootstrap, Node.js, Knex, Express, PostgreSQL) that allows users to view the latest video games, and 
               leave reviews to inform others about that game.</CardText>
               <h1 style={{fontSize: ".9em", textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6"}}>(4 day timeline / Team Project)</h1>
-              <a href="https://github.com/mpecicUSA/realGamingReviewsq4"><Button style={{color: "#add8e6", marginLeft: "42%"}}>Github</Button></a>
+              <a href="https://github.com/mpecicUSA/realGamingReviewsq4"><Button style={{color: "#add8e6", marginLeft: "15em"}}>Github</Button></a>
             </Card>
           </Col>
         </Row>
@@ -75,7 +75,7 @@ class Projects extends Component {
               with Vue.js, VueX, Vuetify, Node.js, Express, Knex, PostgreSQL) That allows users to view situations others have been in, create
               situations, rate others solutions, and comment on situations to give advice.</CardText>
               <h1 style={{fontSize: ".9em", textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6"}}>(2 week timeline)</h1>
-              <a href="https://github.com/lucasromero18/yikers_frontend"><Button style={{color: "#add8e6", marginLeft: "44%"}}>GitHub</Button></a>
+              <a href="https://github.com/lucasromero18/yikers_frontend"><Button style={{color: "#add8e6", marginLeft: "18.5em"}}>GitHub</Button></a>
             </Card>
           </Col>
           </Row>
