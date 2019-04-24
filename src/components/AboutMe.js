@@ -94,19 +94,19 @@ class AboutMe extends Component {
               <p style={aboutMeText.styles}><h1 style={getToKnowMe.styles}>Get to know me</h1>My name is Lucas Romero, and I develop with a 
               purpose. I am a full-stack web developer, with an extra sprinkle of passion for front-end web development, and UI / UX design. 
               Passion, and continuously feeding my curiosity are both the main reasons I love to write code. I am attached to throwing all 
-              of my creativity and drive into the applications I create, and I push towards targeting every individual in terms of being application use. 
+              of my creativity and drive into the applications I create, and I push towards targeting every individual in terms of application use. 
               The "how", is what keeps me going. I believe that technology lies within a never ending passage that consists of learning, and having
               the opportunity to expand my horizon on different technologies and frame works effectively is what I continue to execute everyday. On my free time, I
               find myself in the gym, or outdoors exploring! Becoming the best Lucas I can become, is the mission I am currently on. 
               I view enhancing both of my physical and programming abilities to the fullest as a priority, but most importantly making sure I have as 
-              much fun as I can throuhgout the process!</p>
+              much fun as I can throughout the process!</p>
           </div>
           <div style={ihdContainer.styles}>
           <div style={itemContainer.styles}>
             <h1><i style={icon.styles} class="fas fa-globe-americas"></i></h1>
             <h2 style={{fontFamily: 'Montserrat, sans-serif', paddingLeft: "1em", color: "#2a2a2a", fontSize: "2.4em", color: "#add8e6"}}>Communication</h2>
-            <p style={{fontFamily: 'Montserrat, sans-serif', paddingLeft: "3em"}}>Along with executing everything I do effeciently, having the ability to communicate 
-            is what I do best. I love working in teams, and passing information as effectively as possible!</p>
+            <p style={{fontFamily: 'Montserrat, sans-serif', paddingLeft: "3em"}}>Along with executing everything I do efficiently, having the ability to communicate 
+            is what I do best. I love working in teams, and passing information along as effectively as possible!</p>
           </div>
           <div style={itemContainer.styles}>
             <h1><i style={icon.styles} class="fas fa-eye"></i></h1>

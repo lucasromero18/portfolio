@@ -245,7 +245,7 @@ class Education extends Component {
           Following that period of time, I felt it was necessary to switch my major to Kinesiology. I spent time taking Anatomy and other classes that were relevant to 
           complete my major classes while working on pre-requisite classes. Then, I had felt that Kinesiology was to specific. I feared changing my mind further down the line, so
           I changed my major for the last time. I decided to major in Business / Entrepreneurship. During the time I was taking classes under that major, life took it's toll and I ended up having 
-          to drop school and focus on work only. A month later, my life changed completely and I ended up moving my life over to Arizona.</p>
+          to drop school and focus on work only. A month later, my life changed completely and I ended up moving to Arizona.</p>
             </div>
           </div>
         </div>

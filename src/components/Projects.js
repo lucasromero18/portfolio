@@ -26,7 +26,7 @@ class Projects extends Component {
           <Col style={{paddingLeft: "2.5em"}}  sm="6">
             <Card body style={{marginTop: "3em", backgroundColor: "#808080"}}>
               <CardTitle style={{textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6", fontSize: "2em"}}>Romero Fitness</CardTitle>
-              <CardText style={{textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6"}}>A Fitness Application (built with 
+              <CardText style={{textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6"}}>A fitness application (built with 
               HTML, CSS, Bootstrap, and javascript) that contains direction with various training styles, accessibility to a body fat analyzer / 
               chart to determine where the users health may lie.</CardText>
               <h1 style={{fontSize: ".9em", textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6"}}>(4 day timeline)</h1>
@@ -49,7 +49,7 @@ class Projects extends Component {
           <Col style={{paddingLeft: "2.5em"}} sm="6">
             <Card body style={{marginTop: "2em", backgroundColor: "#808080"}}>
               <CardTitle style={{textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6", fontSize: "2em"}}>F.I.T.</CardTitle>
-              <CardText style={{textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6"}}>A Fitness Inventory Application
+              <CardText style={{textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6"}}>A Fitness Inventory application
               (built with React, Materialize, Node.js, Knex, Express, PostgreSQL) that allows one to construct their "dream" at home gym with
               various items, and checkout items in their cart.</CardText>
               <h1 style={{fontSize: ".9em", textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6"}}>(4 day timeline)</h1>
@@ -71,8 +71,8 @@ class Projects extends Component {
           <Col sm="6">
             <Card body style={{marginTop: "3em", marginLeft: "17em", marginBottom: "4em", width: "55vw", backgroundColor: "#808080"}}>
               <CardTitle style={{textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6", fontSize: "2em"}}>Yikers!</CardTitle>
-              <CardText style={{textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6"}}>A Social Media Application (built
-              with Vue.js, VueX, Vuetify, Node.js, Express, Knex, PostgreSQL) That allows users to view situations others have been in, create
+              <CardText style={{textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6"}}>A Social Media application (built
+              with Vue.js, VueX, Vuetify, Node.js, Express, Knex, PostgreSQL) that allows users to view situations others have been in, create
               situations, rate others solutions, and comment on situations to give advice.</CardText>
               <h1 style={{fontSize: ".9em", textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6"}}>(2 week timeline)</h1>
               <a href="https://github.com/lucasromero18/yikers_frontend"><Button style={{color: "#add8e6", marginLeft: "18.5em"}}>GitHub</Button></a>
