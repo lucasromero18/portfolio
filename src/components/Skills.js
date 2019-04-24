@@ -38,7 +38,7 @@ const soft = {
 class Skills extends Component {
     render() {
       return (
-        <div id="tsSkills" style={{backgroundColor: "#F8F8FF", borderBottom: "2px solid #c0c0c0"}}>
+        <div id="tsSkills" style={{backgroundColor: "#F8F8FF"}}>
           <div style={headerContainer.styles}>
             <h1 style={header.styles}>I utilize <h1 style={{color: "#add8e6", fontSize: "1em", fontWeight: "bold", display: "inline", borderBottom: "2px solid #808080"}}>two</h1> types of skills..</h1>
               </div>

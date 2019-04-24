@@ -7,7 +7,7 @@ class Contact extends Component {
     render() {
       return (
         <>
-        <div id="contactInfo" style={{backgroundColor: "#2a2a2a", shapeOutside: "polygon(10px 10px, 20px 20px, 30px 30px)"}}>
+        <div id="contactInfo" style={{backgroundColor: "#2a2a2a", marginTop: "-15px"}}>
         <div>
           <h1 style={{textAlign: "center", fontFamily: 'Montserrat, sans-serif', fontSize: "3em", fontWeight: "bold", paddingTop: "3%", color: "#add8e6" }}>Let's get in touch!</h1>
         </div>
