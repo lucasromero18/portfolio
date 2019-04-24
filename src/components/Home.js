@@ -15,8 +15,8 @@ const jumbo = {
     position: 'absolute', 
     color: 'white',
     fontFamily: 'Montserrat, sans-serif',
-    marginTop: "17%",
-    marginLeft: "27%",
+    marginTop: "4.5em",
+    marginLeft: "28%",
     fontSize: "3em"
   }
 }
@@ -26,8 +26,8 @@ const fullStack = {
     position: 'absolute', 
     color: 'white',
     fontFamily: 'Montserrat, sans-serif',
-    marginTop: "22%",
-    marginLeft: "20%",
+    marginTop: "5.8em",
+    marginLeft: "23%",
     fontSize: "3em"
   }
 }
@@ -60,8 +60,8 @@ class Home extends Component {
     render() {
       return (
         <div id="home">
-          <h1 style={jumbo.styles}>Hello, I'm Lucas Romero.</h1>
-          <h1 style={fullStack.styles}>I'm a Full Stack Web Developer.</h1>
+            <h1 style={jumbo.styles}>Hello, I'm Lucas Romero.</h1>
+            <h1 style={fullStack.styles}>I'm a Full Stack Web Developer.</h1>
            <a href="#aboutme"><Button style={viewButton.styles} outline>View my work <i style={viewWorkArrow.styles} className="fas fa-arrow-circle-down"></i></Button></a>   
             <Particles 
                 params={
@@ -179,7 +179,8 @@ class Home extends Component {
                 style={{
                   width: '100%',
                   height: '100vh',
-                  backgroundColor: '#2a2a2a'
+                  backgroundColor: '#2a2a2a',
+                  borderBottom: "2px solid #00ffff"
                 }} />
           <Header />
           <AboutMe />

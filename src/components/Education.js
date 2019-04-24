@@ -53,17 +53,17 @@ const education = {
     fontSize: "3em",
     fontWeight: "bold",
     textAlign: "center",
-    paddingTop: "7%"
+    paddingTop: "2.5em"
   }
 }
 
-// const AnyReactComponent = ({ text }) => <div>{text}</div>;
+ const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
 class Education extends Component {
 
   constructor(props) {
     super(props);
-    this.state = { galvActiveIndex: 0, cocActiveIndex: 0, galv: false, coc: false };
+    this.state = { galvActiveIndex: 0, cocActiveIndex: 0, galv: false, coc: false, googleMaps: true };
     this.nextGalv = this.nextGalv.bind(this);
     this.previousGalv = this.previousGalv.bind(this);
     this.goToIndexGalv = this.goToIndexGalv.bind(this);
@@ -126,27 +126,27 @@ class Education extends Component {
     this.setState({ cocActiveIndex: newIndex });
   }
   
-  
-  //  galvanizeLocation = {
-  //   center: {
-  //     lat: 33.439830,
-  //     lng: -112.067020
-  //   },
-  //   zoom: 13
-  // };
 
-  // cocLocation = {
-  //   center: {
-  //     lat: 34.404020,
-  //     lng: -118.569890
-  //   },
-  //   zoom: 13
-  // };
+   galvanizeLocation = {
+    center: {
+      lat: 33.439830,
+      lng: -112.067020
+    },
+    zoom: 13
+  };
+
+  cocLocation = {
+    center: {
+      lat: 34.404020,
+      lng: -118.569890
+    },
+    zoom: 13
+  };
 
   googleMaps = (campus) => {
    console.log([campus])
    this.setState({
-      [campus]: [!campus]
+      [campus]: !this.state[campus]
     })
   }
 
@@ -184,20 +184,20 @@ class Education extends Component {
       
       return (
         <div style={{backgroundColor: "#FFFAFA"}}>
-          <h1 style={education.styles}>Education <h1 style={{color: "#add8e6", fontSize: "1em", fontWeight: "bold", display: "inline"}}>History</h1></h1>
+          <h1 style={education.styles}>Education <h1 style={{color: "#add8e6", fontSize: "1em", fontWeight: "bold", display: "inline"}}>History</h1><i style={{marginLeft: ".5em"}} class="fas fa-book"></i></h1>
           <div>
-            <h1 style={{marginLeft: "2%", fontFamily: 'Montserrat, sans-serif', color: "#add8e6", fontSize: "2.5"}}>Galvanize</h1>
-            <h1 style={{marginLeft: "2%", fontFamily: 'Montserrat, sans-serif', color: "#808080", fontSize: "1.5em"}}>Phoenix, AZ <button style={{display: "inline", color: "red", background:'transparent', border: 'none'}}> <i onClick={() => this.googleMaps('galv')} class="fas fa-map-pin"></i></button></h1>
-            <h1 style={{marginLeft: "2%", fontFamily: 'Montserrat, sans-serif', color: "#808080", fontSize: "1.5em"}}>September 2018 <i style={{fontSize: ".7em", color: "#add8e6"}} className="fas fa-arrow-circle-right"></i> <p style={{color: "#add8e6", fontFamily: 'Montserrat, sans-serif', display: "inline"}}>March 2019</p></h1>
-              {/* {this.state.galv ? <div style={{ height: '50vh', width: '50%', marginLeft: "2%" }}>
+            <h1 style={{marginTop: "2em", marginLeft: "1.1em", fontFamily: 'Montserrat, sans-serif', color: "#add8e6", fontSize: "2.5"}}>Galvanize</h1>
+            <h1 style={{marginLeft: "2em", fontFamily: 'Montserrat, sans-serif', color: "#808080", fontSize: "1.5em"}}>Phoenix, AZ <button style={{display: "inline", color: "red", background:'transparent', border: 'none'}}> <i onClick={() => this.googleMaps('galv')} class="fas fa-map-pin"></i></button></h1>
+            <h1 style={{marginLeft: "2em", fontFamily: 'Montserrat, sans-serif', color: "#808080", fontSize: "1.5em"}}>September 2018 <i style={{fontSize: ".7em", color: "#add8e6"}} className="fas fa-arrow-circle-right"></i> <p style={{color: "#add8e6", fontFamily: 'Montserrat, sans-serif', display: "inline"}}>March 2019</p></h1>
+               {this.state.galv ? <div style={{ height: '50vh', width: '50%', marginLeft: "2%" }}>
               <GoogleMapReact
                 bootstrapURLKeys={{key:'AIzaSyCf-we8wkTCTggl9WoiKauYqdwhTXke9RA'}}
                 defaultCenter={this.galvanizeLocation.center}
                 defaultZoom={this.galvanizeLocation.zoom}
               >
             </GoogleMapReact>
-         </div> : null}  */}
-          <div style={{float: "right", height: "20em", width: "30em", paddingRight: "2%"}}>
+         </div> : null}  
+          <div style={{float: "right", height: "20em", width: "30em", paddingRight: "1em"}}>
           <Carousel
               activeIndex={galvActiveIndex}
               next={this.nextGalv}
@@ -210,7 +210,7 @@ class Education extends Component {
           </Carousel>
           </div> 
           <div>
-          <p style={{width: "50%", marginLeft: "2%", fontFamily: 'Montserrat, sans-serif', fontSize: "1.2em"}}>Galvanize holds a Web Development Immersive Program
+          <p style={{width: "50%", marginLeft: "2.5em", fontFamily: 'Montserrat, sans-serif', fontSize: "1.2em"}}>Galvanize holds a Web Development Immersive Program
            that highlights full-stack web development. Learning HTML, CSS, javascript, git, Node.js, Knex, Express, MVC, PostgreSQL, React, Vue,
            and State Management within the duration of 6 months, felt like an overload at the time. I sit here and reflect every now and then,
            on how effective, life changing, and amazing the Galvanize Immersive Program actually was. With deadlines as short as four days to 
@@ -218,18 +218,18 @@ class Education extends Component {
            abilities to a whole new level, and I owe every bit of programming knowledge to Galvanize.</p>
           </div>
           <div>
-            <h1 style={{marginLeft: "2%", fontFamily: 'Montserrat, sans-serif', color: "#add8e6", fontSize: "2.5", marginTop: "5%"}}>College Of The Canyons</h1>
-            <h1 style={{marginLeft: "2%", fontFamily: 'Montserrat, sans-serif', color: "#808080", fontSize: "1.5em"}}>Valencia, CA <button style={{display: "inline", background: 'transparent', border: 'none' }}><i style={{color: "red"}} onClick={() =>this.googleMaps('coc')} class="fas fa-map-pin"></i></button></h1>
-            <h1 style={{marginLeft: "2%", fontFamily: 'Montserrat, sans-serif', color: "#808080", fontSize: "1.5em"}}>August 2016 <i style={{fontSize: ".7em", color: "#add8e6"}} className="fas fa-arrow-circle-right"></i> <p style={{color: "#add8e6", fontFamily: 'Montserrat, sans-serif', display: "inline"}}>February 2018</p></h1>
-              {/* {this.state.coc ? <div style={{ height: '50vh', width: '50%', marginLeft: "2%" }}>
+            <h1 style={{marginLeft: "1em", fontFamily: 'Montserrat, sans-serif', color: "#add8e6", fontSize: "2.8em", marginTop: "3em"}}>College Of The Canyons</h1>
+            <h1 style={{marginLeft: "2em", fontFamily: 'Montserrat, sans-serif', color: "#808080", fontSize: "1.5em"}}>Valencia, CA <button style={{display: "inline", background: 'transparent', border: 'none' }}><i style={{color: "red"}} onClick={() =>this.googleMaps('coc')} class="fas fa-map-pin"></i></button></h1>
+            <h1 style={{marginLeft: "2em", fontFamily: 'Montserrat, sans-serif', color: "#808080", fontSize: "1.5em"}}>August 2016 <i style={{fontSize: ".7em", color: "#add8e6"}} className="fas fa-arrow-circle-right"></i> <p style={{color: "#add8e6", fontFamily: 'Montserrat, sans-serif', display: "inline"}}>February 2018</p></h1>
+               {this.state.coc ? <div style={{ height: '50vh', width: '50%', marginLeft: "2%" }}>
               <GoogleMapReact
                 bootstrapURLKeys={{key:'AIzaSyCf-we8wkTCTggl9WoiKauYqdwhTXke9RA'}}
                 defaultCenter={this.cocLocation.center}
                 defaultZoom={this.cocLocation.zoom}
               >
             </GoogleMapReact>
-         </div> : null}  */}
-          <div style={{float: "right", height: "20", width: "30em", paddingBottom: "5%", paddingRight: "2%"}}>
+         </div> : null}  
+          <div style={{float: "right", height: "20", width: "30em", paddingBottom: "3em", paddingRight: "1em"}}>
           <Carousel
               activeIndex={cocActiveIndex}
               next={this.nextCoc}
@@ -242,14 +242,12 @@ class Education extends Component {
           </Carousel>
           </div> 
           <div>
-          <p style={{width: "50%", marginLeft: "2%", fontFamily: 'Montserrat, sans-serif', paddingBottom: "5%"}}>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a 
-              complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human 
-              happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to 
-              pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or 
-              desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure 
-              im some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some 
-              advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, 
-              or one who avoids a pain that produces no resultant pleasure?</p>
+          <p style={{width: "50%", marginLeft: "2.5em", fontFamily: 'Montserrat, sans-serif', paddingBottom: "3em", fontSize: "1.2em"}}>Shortly after high school, I attended College of the Canyons
+          in Valencia, CA. There, I majored in Fire Tech for my first 7 months, then came to realization that Fire Fighting wasn't the path that I ultimately wanted to take in life. 
+          Following that period of time, I felt it was necessary to switch my major to Kinesiology. I spent time taking Anatomy and other classes that were relevant to 
+          complete my major classes while working on pre-requisite classes. Then, I had felt that Kinesiology was to specific. I feared changing my mind further down the line, so
+          I changed my major for the last time. I decided to major in Business / Entrepreneurship. During the time I was taking classes under that major, life took it's toll and I ended up having 
+          to drop school and focus on work only. A month later, my life changed completely and I ended up moving my life over to Arizona.</p>
             </div>
           </div>
         </div>

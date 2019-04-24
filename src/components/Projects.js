@@ -4,13 +4,12 @@ import { Card, Button, CardTitle, CardText, Row, Col } from 'reactstrap';
 const header = {
   styles: {
     fontFamily: 'Montserrat, sans-serif',
-    paddingTop: "8%",
-    marginLeft: "38%",
-    width: "20%",
-    fontSize: "2.5",
+    paddingTop: "2em",
+    textAlign: "center",
+    fontSize: "3.5em",
     fontWeight: "bold",
     color: "#808080",
-    borderBottom: "2px solid #add8e6"
+    marginBottom: "1em"
   }
 }
 
@@ -20,12 +19,12 @@ class Projects extends Component {
       return (
       <div id="applications" style={{backgroundColor: "#F5F5F5"}}>
         <div>
-          <h1 style={header.styles}>Applications</h1>
+          <h1 style={header.styles}>Applications<i style={{marginLeft: ".5em", color: "#add8e6"}} class="fas fa-laptop"></i></h1>
         </div>
             <div>
-          <Row>
-          <Col style={{paddingLeft: "3%"}}  sm="6">
-            <Card body style={{marginTop: "8%", backgroundColor: "#808080"}}>
+            <Row>
+          <Col style={{paddingLeft: "2.5em"}}  sm="6">
+            <Card body style={{marginTop: "3em", backgroundColor: "#808080"}}>
               <CardTitle style={{textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6", fontSize: "2em"}}>Romero Fitness</CardTitle>
               <CardText style={{textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6"}}>A Fitness Application (built with 
               HTML, CSS, Bootstrap, and javascript) that contains direction with various training styles, accessibility to a body fat analyzer / 
@@ -34,8 +33,8 @@ class Projects extends Component {
               <a href="https://github.com/lucasromero18/q1-project-romero-fitness"><Button style={{color: "#add8e6", marginLeft: "42%"}}>Github</Button></a>
             </Card>
           </Col>
-          <Col style={{paddingRight: "3%"}} sm="6">
-            <Card body style={{marginTop: "8%", backgroundColor: "#808080"}}>
+          <Col style={{paddingRight: "2.5em"}} sm="6">
+            <Card body style={{marginTop: "3em", backgroundColor: "#808080"}}>
               <CardTitle style={{textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6", fontSize: "2em"}}>techConnect</CardTitle>
               <CardText style={{textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6"}}>A tech-industry dating 
               application (built with Node.js, Knex, Express, PostgreSQL, EJS, and Materialize) that brings users together based off of tech
@@ -47,8 +46,8 @@ class Projects extends Component {
         </Row>
         <div>
         <Row>
-          <Col style={{paddingLeft: "3%"}} sm="6">
-            <Card body style={{marginTop: "5%", backgroundColor: "#808080"}}>
+          <Col style={{paddingLeft: "2.5em"}} sm="6">
+            <Card body style={{marginTop: "2em", backgroundColor: "#808080"}}>
               <CardTitle style={{textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6", fontSize: "2em"}}>F.I.T.</CardTitle>
               <CardText style={{textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6"}}>A Fitness Inventory Application
               (built with React, Materialize, Node.js, Knex, Express, PostgreSQL) that allows one to construct their "dream" at home gym with
@@ -57,8 +56,8 @@ class Projects extends Component {
               <a href="https://github.com/lucasromero18/q3project-frontend"><Button style={{color: "#add8e6", marginLeft: "42%"}}>Github</Button></a>
             </Card>
           </Col>
-          <Col style={{paddingRight: "3%"}}  sm="6">
-            <Card body style={{marginTop: "5%", backgroundColor: "#808080"}}>
+          <Col style={{paddingRight: "2.5em"}}  sm="6">
+            <Card body style={{marginTop: "2em", backgroundColor: "#808080"}}>
               <CardTitle style={{textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6", fontSize: "2em"}}>Real Gaming Reviews</CardTitle>
               <CardText style={{textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6"}}>A video game review application 
               (built with React, MDBootstrap, Node.js, Knex, Express, PostgreSQL) that allows users to view the latest video games, and 
@@ -70,7 +69,7 @@ class Projects extends Component {
         </Row>
         <Row>
           <Col sm="6">
-            <Card body style={{marginTop: "5%", marginLeft: "46%", marginBottom: "5%", width: "55vw", backgroundColor: "#808080", marginBottom: "15%"}}>
+            <Card body style={{marginTop: "3em", marginLeft: "17em", marginBottom: "4em", width: "55vw", backgroundColor: "#808080"}}>
               <CardTitle style={{textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6", fontSize: "2em"}}>Yikers!</CardTitle>
               <CardText style={{textAlign: "center", fontFamily: 'Montserrat, sans-serif', color: "#add8e6"}}>A Social Media Application (built
               with Vue.js, VueX, Vuetify, Node.js, Express, Knex, PostgreSQL) That allows users to view situations others have been in, create

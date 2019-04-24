@@ -12,10 +12,13 @@ import {
   const navBar = {
     styles: {
       backgroundColor: "#2a2a2a",
-      borderTop: "1px solid #00ffff",
-      marginTop: '-5px',
+      borderBottom: "1px solid #00ffff",
       display: 'flex',
-      justifyContent: 'center'
+      justifyContent: 'center',
+      position: "fixed",
+      zIndex: "1000",
+      width: "100%",
+      top: "0"
     }
   }
 
