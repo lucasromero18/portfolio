@@ -104,28 +104,28 @@ class AboutMe extends Component {
           </div>
           <div style={ihdContainer.styles}>
           <div style={itemContainer.styles}>
-            <h1><i style={icon.styles} class="fas fa-globe-americas"></i></h1>
+            <h1><i style={{fontSize: "2.4em", color: "#add8e6", paddingLeft: ".5em"}} class="fas fa-globe-americas"></i></h1>
             <h2 style={{fontFamily: 'Montserrat, sans-serif', paddingLeft: "1em", color: "#2a2a2a", fontSize: "2.4em", color: "#add8e6"}}>Communication</h2>
             <p style={{fontFamily: 'Montserrat, sans-serif', paddingLeft: "3em"}}>Along with executing everything I do efficiently, having the ability to communicate 
             is what I do best. I love working in teams, and passing information along as effectively as possible!</p>
           </div>
           <div style={itemContainer.styles}>
-            <h1><i style={icon.styles} class="fas fa-eye"></i></h1>
-            <h2 style={{fontFamily: 'Montserrat, sans-serif', marginLeft: "0.3em", color: "#2a2a2a", fontSize: "2.4em", color: "#add8e6"}}>Detail</h2>
+            <h1><i style={{fontSize: "2.4em", color: "#add8e6", marginLeft: ".3em"}} class="fas fa-eye"></i></h1>
+            <h2 style={{fontFamily: 'Montserrat, sans-serif', color: "#2a2a2a", fontSize: "2.4em", color: "#add8e6", marginLeft: ".5em"}}>Detail</h2>
             <p style={{fontFamily: 'Montserrat, sans-serif', paddingLeft: "2em"}}>In relation to my love for front-end web development and UI / UX design, detail is priority. Creating interfaces that are more
               than appealing to the users eye, is my goal.</p>
           </div>
           <div style={itemContainer.styles}>
-            <h1><i style={icon.styles} class="fas fa-clock"></i></h1>
+            <h1><i style={{fontSize: "2.4em", color: "#add8e6", marginLeft: ".2em"}} class="fas fa-clock"></i></h1>
             <h2 style={{fontFamily: 'Montserrat, sans-serif', marginLeft: "0.4em", color: "#2a2a2a", fontSize: "2.4em", color: "#add8e6"}}>Efficiency</h2>
             <p style={{fontFamily: 'Montserrat, sans-serif', paddingLeft: "1.5em"}}>Getting the job done is great, but was the process as efficient as possible? Working 
-            efficiently provides more room for opportunity. Work smarter, not harder.</p>
+            efficiently provides more room for opportunity. I Work smarter, not harder.</p>
           </div>
           <div style={itemContainer.styles}>
-            <h1><i style={icon.styles} class="fas fa-brain"></i></h1>
-            <h2 style={{fontFamily: 'Montserrat, sans-serif', paddingRight: ".5em", color: "#2a2a2a", fontSize: "2.4em", color: "#add8e6"}}>Determined</h2>
+            <h1><i style={{fontSize: "2.4em", color: "#add8e6", paddingRight: ".5em"}} class="fas fa-brain"></i></h1>
+            <h2 style={{fontFamily: 'Montserrat, sans-serif', paddingRight: "1em", color: "#2a2a2a", fontSize: "2.4em", color: "#add8e6"}}>Determined</h2>
             <p style={{fontFamily: 'Montserrat, sans-serif', paddingRight: "2em"}}>I am always eager to learn new approaches to real world problems, and continue to
-            put all of my effort into striving into the individual i desire to be.</p>
+            put all of my effort into striving into the individual I can be.</p>
           </div>
           </div>
         </div>
