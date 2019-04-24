@@ -9,7 +9,7 @@ class Contact extends Component {
         <>
         <div id="contactInfo" style={{backgroundColor: "#2a2a2a", marginTop: "-15px"}}>
         <div>
-          <h1 style={{textAlign: "center", fontFamily: 'Montserrat, sans-serif', fontSize: "3em", fontWeight: "bold", paddingTop: "3%", color: "#add8e6" }}>Let's get in touch!</h1>
+          <h1 style={{textAlign: "center", fontFamily: 'Montserrat, sans-serif', fontSize: "3em", fontWeight: "bold", paddingTop: "3%", color: "#add8e6" }}>Let's get in touch <i style={{fontSize: ".8em"}}class="fas fa-arrow-down"></i></h1>
         </div>
           <div style={{paddingBottom: "2em"}}>
           <Row style={{justifyContent: "center", paddingTop: "2em"}}>
