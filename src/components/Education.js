@@ -28,9 +28,6 @@ const galvItems = [
 
 const cocItems = [
   {
-    src: 'https://www.canyons.edu/Offices/PIO/PublishingImages/Logos/coc_logo_1200px.jpg',
-  },
-  {
     src: 'https://www.klassencorp.com/wp-content/uploads/2016/08/college-of-the-canyons-klassen-project.jpg'
   },
   {

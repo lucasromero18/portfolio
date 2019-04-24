@@ -12,7 +12,7 @@ import {
   const navBar = {
     styles: {
       backgroundColor: "#2a2a2a",
-      borderBottom: "1px solid #00ffff",
+      borderBottom: "1px solid #add8e6",
       display: 'flex',
       justifyContent: 'center',
       position: "fixed",

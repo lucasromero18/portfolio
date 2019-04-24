@@ -87,7 +87,7 @@ class AboutMe extends Component {
 
     render() {
       return (
-        <div id="aboutme" style={{backgroundColor: "#F0F8FF", marginTop: "0"}}>
+        <div id="aboutme" style={{backgroundColor: "#F0F8FF", marginTop: "0", borderBottom: "2px solid #c0c0c0"}}>
           <h1 style={aboutMeHeader.styles}>Who's <h1 style={{color: "#add8e6", fontSize: "1em", fontWeight: "bold", display: "inline", borderBottom: "2px solid #808080"}}>this</h1> guy?</h1>
             <div style={picImageContainer.styles}>
               <img style={myImage.styles} src={myImmy} />

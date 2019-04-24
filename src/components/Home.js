@@ -3,7 +3,6 @@ import AboutMe from './AboutMe.js'
 import Skills from './Skills.js'
 import Projects from './Projects.js'
 import Education from './Education.js'
-import Header from './Header.js'
 import Contact from './Contact.js'
 import Particles from 'react-particles-js'
 import { Animate } from "react-simple-animate"
@@ -60,6 +59,7 @@ class Home extends Component {
     render() {
       return (
         <div id="home">
+
             <h1 style={jumbo.styles}>Hello, I'm Lucas Romero.</h1>
             <h1 style={fullStack.styles}>I'm a Full Stack Web Developer.</h1>
            <a href="#aboutme"><Button style={viewButton.styles} outline>View my work <i style={viewWorkArrow.styles} className="fas fa-arrow-circle-down"></i></Button></a>   
@@ -180,9 +180,8 @@ class Home extends Component {
                   width: '100%',
                   height: '100vh',
                   backgroundColor: '#2a2a2a',
-                  borderBottom: "2px solid #00ffff"
+                  borderBottom: "2px solid #add8e6"
                 }} />
-          <Header />
           <AboutMe />
           <Skills />
           <Projects />
