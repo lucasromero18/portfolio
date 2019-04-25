@@ -14,9 +14,9 @@ const jumbo = {
     position: 'absolute', 
     color: 'white',
     fontFamily: 'Montserrat, sans-serif',
-    marginTop: "4.5em",
-    marginLeft: "7.5em",
-    fontSize: "3em"
+    top: "42%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
   }
 }
 
@@ -25,9 +25,9 @@ const fullStack = {
     position: 'absolute', 
     color: 'white',
     fontFamily: 'Montserrat, sans-serif',
-    marginTop: "5.8em",
-    marginLeft: "5.5em",
-    fontSize: "3em"
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
   }
 }
 
@@ -59,8 +59,7 @@ class Home extends Component {
     render() {
       return (
         <div id="home">
-
-            <h1 style={jumbo.styles}>Hello, I'm <h1 style={{fontFamily: "Montserrat, sans-serif", display: "inline", fontSize: "1em", color: "#cd5c5c"}}>Lucas Romero.</h1></h1>
+          <h1 style={jumbo.styles}>Hello, I'm <h1 style={{fontFamily: "Montserrat, sans-serif", display: "inline", fontSize: "1em", color: "#cd5c5c"}}>Lucas Romero.</h1></h1>
             <h1 style={fullStack.styles}>I'm a Full Stack Web Developer.</h1>
            <a href="#aboutme"><Button style={viewButton.styles} outline>View my work <i style={viewWorkArrow.styles} className="fas fa-arrow-circle-down"></i></Button></a>   
             <Particles 
