@@ -12,12 +12,12 @@ class App extends Component {
 
 
   render() {
-    if(window.screen &&( window.screen.width < 750 || window.screen.width > 1920)){
+    if(window.screen && window.screen.width < 750){
       return (
         <>
           <div style={{textAlign: "center", fontFamily: 'Montserrat, sans-serif', backgroundColor: "#f8f8ff", minHeight: "100vh"}}>
-            <h1 style={{paddingTop: "2.5em", color: "#808080"}}>Hello!</h1>
-            <p style={{marginTop: "1em", color: "#808080", paddingLeft: "3em", paddingRight: "3em"}}>Thank you for taking the time to visit my portfolio website. Unfortunately, it does not support a screen of this size (just yet). For optimal viewing, view on a screen with the resolution of 1920 x 1080.</p>
+            <h1 style={{color: "#808080"}}>Hello!</h1>
+            <p style={{marginTop: "1em", color: "#808080", paddingLeft: "3em", paddingRight: "3em"}}>Thank you for taking the time to visit my portfolio website. Unfortunately, it does not support mobile devices (just yet).</p>
             <i style={{fontSize: "2em", color: "#add8e6"}}class="fas fa-arrow-down"></i>
             <p style={{marginTop: "1em", color: "#808080", paddingLeft: "3em", paddingRight: "3em"}}>Please feel free to view my portfolio website on a laptop or desktop.</p>
             <i style={{fontSize: "2em", color: "#add8e6"}}class="fas fa-arrow-down"></i>
