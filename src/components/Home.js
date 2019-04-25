@@ -35,8 +35,9 @@ const viewButton = {
   styles: {
     position: 'absolute',
     color: "white",
-    marginTop: "28%",
-    marginLeft: "40%",
+    top: "60%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
     fontFamily: 'Montserrat, sans-serif',
     height: "10%",
     width: "20%"

@@ -16,7 +16,7 @@ class App extends Component {
       return (
         <>
           <div style={{textAlign: "center", fontFamily: 'Montserrat, sans-serif', backgroundColor: "#f8f8ff", minHeight: "100vh"}}>
-            <h1 style={{color: "#808080"}}>Hello!</h1>
+            <h1 style={{color: "#808080", paddingTop: "1em"}}>Hello!</h1>
             <p style={{marginTop: "1em", color: "#808080", paddingLeft: "3em", paddingRight: "3em"}}>Thank you for taking the time to visit my portfolio website. Unfortunately, it does not support mobile devices (just yet).</p>
             <i style={{fontSize: "2em", color: "#add8e6"}}class="fas fa-arrow-down"></i>
             <p style={{marginTop: "1em", color: "#808080", paddingLeft: "3em", paddingRight: "3em"}}>Please feel free to view my portfolio website on a laptop or desktop.</p>
