@@ -209,7 +209,7 @@ class Education extends Component {
           </div> 
           <div>
           <p style={{width: "50%", marginLeft: "2.5em", fontFamily: 'Montserrat, sans-serif', fontSize: "1.2em"}}>Galvanize holds a Web Development Immersive Program
-           that highlights full-stack web development. Learning HTML, CSS, javascript, git, Node.js, Knex, Express, MVC, PostgreSQL, React, Vue,
+           that highlights full-stack web development. Learning HTML, CSS, javascript, git, Node.js, Knex, Express, MVC, PostgreSQL, React,
            and State Management within the duration of 6 months, felt like an overload at the time. I sit here and reflect every now and then,
            on how effective, life changing, and amazing the Galvanize Immersive Program actually was. With deadlines as short as four days to 
            create an application, assessments, sleepless nights, and mock interviews, I have been given the opportunity to take my programming 

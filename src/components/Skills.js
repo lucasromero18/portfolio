@@ -21,7 +21,7 @@ const header = {
 
 const technical = {
   styles: {
-    color: '#add8e6',
+    color: '#1e90ff',
     fontFamily: 'Montserrat, sans-serif'
   }
 }
@@ -45,20 +45,20 @@ class Skills extends Component {
                 <div style={{display: "inline-block", width: "50%", textAlign: "center"}}>
                   <h1 style={technical.styles}>Technical Skills</h1>
                     <div style={{marginTop: "2em", paddingBottom: "2em"}}>
-                      <TroyBar percentageColor={'#add8e6'} skill={"HTML"} color={'#add8e6'} val={1} widthHeight={7.5} size={0.8}/>
-                      <TroyBar percentageColor={'#add8e6'} skill={"CSS"} color={'#add8e6'} val={1} widthHeight={7.5} size={0.8}/>
-                      <TroyBar percentageColor={'#add8e6'} skill={"Version Control"} color={'#add8e6'} val={0.90} widthHeight={7.5} size={0.8}/>
-                      <TroyBar percentageColor={'#add8e6'} skill={"Javascript"} color={'#add8e6'} val={0.85} widthHeight={7.5} size={0.8}/>
+                      <TroyBar percentageColor={'#1e90ff'} skill={"HTML"} color={'#1e90ff'} val={1} widthHeight={7.5} size={0.8}/>
+                      <TroyBar percentageColor={'#1e90ff'} skill={"CSS"} color={'#1e90ff'} val={1} widthHeight={7.5} size={0.8}/>
+                      <TroyBar percentageColor={'#1e90ff'} skill={"Version Control"} color={'#1e90ff'} val={0.90} widthHeight={7.5} size={0.8}/>
+                      <TroyBar percentageColor={'#1e90ff'} skill={"Javascript"} color={'#1e90ff'} val={0.85} widthHeight={7.5} size={0.8}/>
                     </div>
                     <div style={{marginTop: "1em", paddingBottom: "2em"}}>
-                      <TroyBar percentageColor={'#add8e6'} skill={"MVC"} color={'#add8e6'} val={0.80} widthHeight={7.5} size={0.8}/>
-                      <TroyBar percentageColor={'#add8e6'} skill={"React"} color={'#add8e6'} val={0.75} widthHeight={7.5} size={0.8}/>
-                      <TroyBar percentageColor={'#add8e6'} skill={"SQL"} color={'#add8e6'} val={0.75} widthHeight={7.5} size={0.8}/>
-                      <TroyBar percentageColor={'#add8e6'} skill={"Vue"} color={'#add8e6'} val={0.70} widthHeight={7.5} size={0.8}/>
+                      <TroyBar percentageColor={'#1e90ff'} skill={"MVC"} color={'#1e90ff'} val={0.80} widthHeight={7.5} size={0.8}/>
+                      <TroyBar percentageColor={'#1e90ff'} skill={"React"} color={'#1e90ff'} val={0.75} widthHeight={7.5} size={0.8}/>
+                      <TroyBar percentageColor={'#1e90ff'} skill={"SQL"} color={'#1e90ff'} val={0.75} widthHeight={7.5} size={0.8}/>
+                      <TroyBar percentageColor={'#1e90ff'} skill={"Vue"} color={'#1e90ff'} val={0.70} widthHeight={7.5} size={0.8}/>
                     </div>
                     <div style={{marginTop: "1em", paddingBottom: "5em"}}>
-                      <TroyBar percentageColor={'#add8e6'} skill={"Node"} color={'#add8e6'} val={0.65} widthHeight={7.5} size={0.8}/>
-                      <TroyBar percentageColor={'#add8e6'}skill={"State Management"} color={'#add8e6'} val={0.60} widthHeight={7.5} size={0.8}/>
+                      <TroyBar percentageColor={'#1e90ff'} skill={"Node"} color={'#1e90ff'} val={0.65} widthHeight={7.5} size={0.8}/>
+                      <TroyBar percentageColor={'#1e90ff'}skill={"State Management"} color={'#1e90ff'} val={0.60} widthHeight={7.5} size={0.8}/>
                     </div>
                     </div>
                     <div style={{display: "inline-block", width: "50%", textAlign: "center"}}>

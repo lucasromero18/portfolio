@@ -97,9 +97,9 @@ class AboutMe extends Component {
               Passion, and continuously feeding my curiosity are both the main reasons I love to write code. I am attached to throwing all 
               of my creativity and drive into the applications I create, and I push towards targeting every individual in terms of application use. 
               The "how", is what keeps me going. I believe that technology lies within a never ending passage that consists of learning, and having
-              the opportunity to expand my horizon on different technologies and frame works effectively is what I continue to execute everyday. On my free time, I
+              the opportunity to expand my horizon on different technologies and frame works effectively is what I continue to execute everyday. In my free time, I
               find myself in the gym, or outdoors exploring! Becoming the best Lucas I can become, is the mission I am currently on. 
-              I view enhancing both of my physical and programming abilities to the fullest as a priority, but most importantly making sure I have as 
+              Strengthening both of my physical and programming abilities to the fullest as a priority, but most importantly making sure I have as 
               much fun as I can throughout the process!</p>
           </div>
           <div style={ihdContainer.styles}>
@@ -125,7 +125,7 @@ class AboutMe extends Component {
             <h1><i style={{fontSize: "2.4em", color: "#add8e6", paddingRight: ".5em"}} class="fas fa-brain"></i></h1>
             <h2 style={{fontFamily: 'Montserrat, sans-serif', paddingRight: "1em", color: "#2a2a2a", fontSize: "2.4em", color: "#add8e6"}}>Determined</h2>
             <p style={{fontFamily: 'Montserrat, sans-serif', paddingRight: "2em"}}>I am always eager to learn new approaches to real world problems, and continue to
-            put all of my effort into striving into the individual I can be.</p>
+            put all of my effort into growing into the best individual I can be.</p>
           </div>
           </div>
         </div>
