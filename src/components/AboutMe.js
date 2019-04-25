@@ -99,8 +99,8 @@ class AboutMe extends Component {
               The "how", is what keeps me going. I believe that technology lies within a never ending passage that consists of learning, and having
               the opportunity to expand my horizon on different technologies and frame works effectively is what I continue to execute everyday. In my free time, I
               find myself in the gym, or outdoors exploring! Becoming the best Lucas I can become, is the mission I am currently on. 
-              Strengthening both of my physical and programming abilities to the fullest as a priority, but most importantly making sure I have as 
-              much fun as I can throughout the process!</p>
+              Strengthening both my physical and programming abilities to the fullest is important, but most importantly making sure I have as 
+              much fun as I can throughout the process, is priority!</p>
           </div>
           <div style={ihdContainer.styles}>
           <div style={itemContainer.styles}>

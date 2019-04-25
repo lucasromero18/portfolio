@@ -49,7 +49,7 @@ class TroyBar extends Component {
           
           bar.text.style.fontFamily = 'Montserrat, sans-serif'
           bar.text.style.fontSize = '1.5rem';
-          bar.text.style.color = '#D3D3D3';
+          bar.text.style.color = 'white';
           bar.animate(this.props.val);
     }
   }
