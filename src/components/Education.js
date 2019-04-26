@@ -124,21 +124,21 @@ class Education extends Component {
   }
   
 
-  //  galvanizeLocation = {
-  //   center: {
-  //     lat: 33.439830,
-  //     lng: -112.067020
-  //   },
-  //   zoom: 13
-  // };
+   galvanizeLocation = {
+    center: {
+      lat: 33.439830,
+      lng: -112.067020
+    },
+    zoom: 13
+  };
 
-  // cocLocation = {
-  //   center: {
-  //     lat: 34.404020,
-  //     lng: -118.569890
-  //   },
-  //   zoom: 13
-  // };
+  cocLocation = {
+    center: {
+      lat: 34.404020,
+      lng: -118.569890
+    },
+    zoom: 13
+  };
 
   googleMaps = (campus) => {
    console.log([campus])
@@ -187,14 +187,14 @@ class Education extends Component {
             <h1 style={{marginTop: "1em", marginLeft: "1.1em", fontFamily: 'Montserrat, sans-serif', color: "#add8e6", fontSize: "2.5"}}>Galvanize Inc.</h1>
             <h1 style={{marginLeft: "2em", fontFamily: 'Montserrat, sans-serif', color: "#808080", fontSize: "1.5em"}}>Phoenix, AZ <button style={{display: "inline", color: "red", background:'transparent', border: 'none'}}> <i onClick={() => this.googleMaps('galv')} class="fas fa-map-pin"></i></button></h1>
             <h1 style={{marginLeft: "2em", fontFamily: 'Montserrat, sans-serif', color: "#808080", fontSize: "1.5em"}}>September 2018 <i style={{fontSize: ".7em", color: "#add8e6"}} className="fas fa-arrow-circle-right"></i> <p style={{color: "#add8e6", fontFamily: 'Montserrat, sans-serif', display: "inline"}}>March 2019</p></h1>
-               {/* {this.state.galv ? <div style={{ height: '50vh', width: '50%', marginLeft: "2%" }}>
+                {this.state.galv ? <div style={{ height: '50vh', width: '50%', marginLeft: "2%" }}>
               <GoogleMapReact
                 bootstrapURLKeys={{key:'AIzaSyCf-we8wkTCTggl9WoiKauYqdwhTXke9RA'}}
                 defaultCenter={this.galvanizeLocation.center}
                 defaultZoom={this.galvanizeLocation.zoom}
               >
             </GoogleMapReact>
-         </div> : null}   */}
+         </div> : null}   
           <div style={{float: "right", height: "20em", width: "30em", paddingRight: "1em"}}>
           <Carousel
               activeIndex={galvActiveIndex}
@@ -219,14 +219,14 @@ class Education extends Component {
             <h1 style={{marginLeft: "1em", fontFamily: 'Montserrat, sans-serif', color: "#add8e6", fontSize: "2.8em", marginTop: "3em"}}>College Of The Canyons</h1>
             <h1 style={{marginLeft: "2em", fontFamily: 'Montserrat, sans-serif', color: "#808080", fontSize: "1.5em"}}>Valencia, CA <button style={{display: "inline", background: 'transparent', border: 'none' }}><i style={{color: "red"}} onClick={() =>this.googleMaps('coc')} class="fas fa-map-pin"></i></button></h1>
             <h1 style={{marginLeft: "2em", fontFamily: 'Montserrat, sans-serif', color: "#808080", fontSize: "1.5em"}}>August 2016 <i style={{fontSize: ".7em", color: "#add8e6"}} className="fas fa-arrow-circle-right"></i> <p style={{color: "#add8e6", fontFamily: 'Montserrat, sans-serif', display: "inline"}}>February 2018</p></h1>
-                {/* {this.state.coc ? <div style={{ height: '50vh', width: '50%', marginLeft: "2%" }}>
+                 {this.state.coc ? <div style={{ height: '50vh', width: '50%', marginLeft: "2%" }}>
               <GoogleMapReact
                 bootstrapURLKeys={{key:'AIzaSyCf-we8wkTCTggl9WoiKauYqdwhTXke9RA'}}
                 defaultCenter={this.cocLocation.center}
                 defaultZoom={this.cocLocation.zoom}
               >
             </GoogleMapReact>
-         </div> : null}  */}
+         </div> : null}  
           <div style={{float: "right", height: "20", width: "30em", paddingBottom: "3em", paddingRight: "1em"}}>
           <Carousel
               activeIndex={cocActiveIndex}
