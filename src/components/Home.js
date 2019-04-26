@@ -7,16 +7,14 @@ import Contact from './Contact.js'
 import Particles from 'react-particles-js'
 import { Animate } from "react-simple-animate"
 import { Button } from 'reactstrap';
-
-
-
 const jumbo = {
   styles: {
     position: 'absolute', 
     color: 'white',
     fontFamily: 'Montserrat, sans-serif',
     top: "42%",
-    left: "50%"
+    left: "50%",
+    transform: "translate(-50%, -50%)",
   }
 }
 
@@ -26,7 +24,9 @@ const fullStack = {
     color: 'white',
     fontFamily: 'Montserrat, sans-serif',
     top: "50%",
-    left: "50%"
+    left: "50%",
+    transform: "translate(-50%, -50%)",
+     
   }
 }
 

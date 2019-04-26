@@ -2,13 +2,6 @@ import React, { Component } from 'react';
 import myImmy from '../lucas_port_immy.jpg';
 import { IncomingMessage } from 'http';
 
-
-
-
-let test = require('progressbar.js');
-
-console.log(test);
-
  
 const aboutMeHeader = {
   styles: {
@@ -17,7 +10,7 @@ const aboutMeHeader = {
     fontSize: "3em",
     fontWeight: "bold",
     textAlign: "center",
-    paddingTop: "2em",
+    paddingTop: "2em"
   }
 }
 
