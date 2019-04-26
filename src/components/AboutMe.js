@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import myImmy from '../lucas_port_immy.jpg';
 import { IncomingMessage } from 'http';
-import '../App.css'
+
 
 
 
@@ -18,9 +18,6 @@ const aboutMeHeader = {
     fontWeight: "bold",
     textAlign: "center",
     paddingTop: "2em",
-    animationName: "moveInLeft",
-    animationDuration: "2s",
-    animationTimingFunction: "ease-out",
   }
 }
 
