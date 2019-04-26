@@ -58,7 +58,7 @@ class Skills extends Component {
                     </div>
                     <div style={{marginTop: "1em", paddingBottom: "5em"}}>
                       <TroyBar percentageColor={'#add8e6'} skill={"Node"} color={'#add8e6'} val={0.65} widthHeight={7.5} size={0.8}/>
-                      <TroyBar percentageColor={'#add8e6'}skill={"State Management"} color={'#add8e6'} val={0.60} widthHeight={7.5} size={0.8}/>
+                      <TroyBar percentageColor={'#add8e6'} skill={"State Management"} color={'#add8e6'} val={0.60} widthHeight={7.5} size={0.8}/>
                     </div>
                     </div>
                     <div style={{display: "inline-block", width: "50%", textAlign: "center"}}>
